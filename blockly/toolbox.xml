@@ -1,4 +1,4 @@
-<category id="Drone" name="無人機積木">
+<category id="catPlus" name="無人機積木">
     
     <block type="drone_take off">
       <field name="Drone">無人機</field>
