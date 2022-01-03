@@ -1,4 +1,12 @@
 <category id="Drone" name="無人機積木">
+    
+    <block type="drone_take off">
+      <field name="Drone">無人機</field>
+      <field name="dropdown">ITEM1</field>
+    </block>
+    
     <block type="drone_unlock"></block>
+    
     <block type="drone_locked"></block>
+    
 </category>
