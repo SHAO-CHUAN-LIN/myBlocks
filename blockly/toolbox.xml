@@ -1,6 +1,6 @@
 <category id="myBlocks" name="自訂積木">
 
-  <category id="myBlocks" name="無人機">
+  <category id="catPlus" name="無人機">
     <block type="drone">
       <field name="Drone">無人機</field>
       <field name="dropdown">ITEM1</field>
