@@ -1,5 +1,5 @@
 {
-  "types": ["drone"],
+  "types": ['drone'],
   "category": "category_custom",
   "scripts": [
     "blockly/blocks.js",
