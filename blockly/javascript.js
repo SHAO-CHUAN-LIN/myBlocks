@@ -16,6 +16,12 @@ Blockly.Arduino['drone_take_off'] = function(block) {
   return code;
 };
 
+Blockly.Arduino['drone_up_and_down'] = function(block) {
+  // TODO: Assemble Arduino into code variable.
+  var code = '...;\n';
+  return code;
+};
+
 Blockly.Arduino['drone_turn_left'] = function(block) {
   // TODO: Assemble Arduino into code variable.
   var code = '...;\n';
