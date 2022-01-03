@@ -40,7 +40,7 @@ Blockly.Blocks['drone_turn_left'] = {
         .appendField("無人機左旋");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour(20);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -52,7 +52,7 @@ Blockly.Blocks['drone_turn_right'] = {
         .appendField("無人機右旋");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour(20);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -64,7 +64,7 @@ Blockly.Blocks['drone_go_straight'] = {
         .appendField("無人機前進");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour(120);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -76,7 +76,7 @@ Blockly.Blocks['drone_go_back'] = {
         .appendField("無人機後退");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour(120);
  this.setTooltip("");
  this.setHelpUrl("");
   }
