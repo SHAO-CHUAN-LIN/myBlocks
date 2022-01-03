@@ -1,6 +1,10 @@
-<category id="category_custom" name="MyBlocks" colour="20">
-  <block type="drone">
-    <field name="Drone">無人機</field>
-    <field name="dropdown">ITEM1</field>
-  </block>
+<category id="myBlocks" name="自訂積木" colour="50">
+
+  <category id="myCategory3" name="無人機" colour="20">
+    <block type="drone">
+      <field name="Drone">無人機</field>
+      <field name="dropdown">ITEM1</field>
+    </block>
+  </category>
+
 </category>
