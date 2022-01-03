@@ -37,7 +37,7 @@ Blockly.Blocks['drone_take_off'] = {
 Blockly.Blocks['drone_turn_left'] = {
    init: function() {
     this.appendDummyInput()
-        .appendField("無人機左轉");
+        .appendField("無人機左旋");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
@@ -49,7 +49,7 @@ Blockly.Blocks['drone_turn_left'] = {
 Blockly.Blocks['drone_turn_right'] = {
    init: function() {
     this.appendDummyInput()
-        .appendField("無人機右轉");
+        .appendField("無人機右旋");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
