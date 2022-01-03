@@ -2,6 +2,7 @@
     <block type="drone_unlock"></block>
     <block type="drone_locked"></block>
     <block type="drone_take_off"></block>
+    <block type="drone_up_and_down"></block>
     <block type="drone_turn_left"></block>
     <block type="drone_turn_right"></block>
     <block type="drone_go_straight"></block>
