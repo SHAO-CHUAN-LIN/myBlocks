@@ -1,10 +1,4 @@
-<category id="myBlocks" name="自訂積木">
-
-  <category id="catPlus" name="無人機">
-    <block type="drone">
-      <field name="Drone">無人機</field>
-      <field name="dropdown">ITEM1</field>
-    </block>
-  </category>
-
+<category id="Drone" name="無人機積木" colour="100">
+    <block type="drone_unlock"></block>
+    <block type="drone_locked"></block>
 </category>
