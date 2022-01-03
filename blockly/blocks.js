@@ -34,6 +34,54 @@ Blockly.Blocks['drone_take_off'] = {
   }
 };
 
+Blockly.Blocks['drone_turn_left'] = {
+   init: function() {
+    this.appendDummyInput()
+        .appendField("無人機左轉");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['drone_turn_right'] = {
+   init: function() {
+    this.appendDummyInput()
+        .appendField("無人機右轉");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['drone_go_straight'] = {
+   init: function() {
+    this.appendDummyInput()
+        .appendField("無人機前進");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['drone_go_back'] = {
+   init: function() {
+    this.appendDummyInput()
+        .appendField("無人機後退");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
 Blockly.Blocks['drone_land'] = {
    init: function() {
     this.appendDummyInput()
