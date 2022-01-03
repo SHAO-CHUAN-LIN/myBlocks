@@ -1,5 +1,5 @@
 {
-  "types": ["drone_unlock","drone_locked","drone_take off"],
+  "types": ["drone_take off","drone_unlock","drone_locked"],
   "category": "Drone",
   "scripts": [
     "blockly/blocks.js",
