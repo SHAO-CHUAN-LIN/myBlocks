@@ -1,4 +1,4 @@
-<category id="myBlocks" name="自訂積木" colour="50">
+<category id="myBlocks" name="自訂積木">
 
   <category id="myCategory3" name="無人機" colour="20">
     <block type="drone">
