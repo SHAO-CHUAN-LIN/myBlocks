@@ -1,0 +1,6 @@
+<category id="category_custom" name="MyBlocks" colour="20">
+  <block type="drone">
+    <field name="Drone">無人機</field>
+    <field name="dropdown">ITEM1</field>
+  </block>
+</category>
