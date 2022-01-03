@@ -1,6 +1,6 @@
 {
   "types": ["drone"],
-  "category": "drone",
+  "category": "myBlocks",
   "scripts": [
     "blockly/blocks.js",
     "blockly/javascript.js"
