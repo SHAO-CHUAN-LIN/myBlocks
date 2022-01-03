@@ -1,4 +1,4 @@
-Blockly.Blocks['drone_take off'] = {
+Blockly.Blocks['drone_take_off'] = {
     init: function() {
       this.appendDummyInput()
           .appendField("無人機")
