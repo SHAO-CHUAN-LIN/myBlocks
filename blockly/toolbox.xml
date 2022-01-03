@@ -1,4 +1,4 @@
-<category id="Drone" name="無人機積木" colour="100">
+<category id="Drone" name="無人機積木" colour="20">
     <block type="drone_unlock"></block>
     <block type="drone_locked"></block>
     <block type="drone_take_off"></block>
