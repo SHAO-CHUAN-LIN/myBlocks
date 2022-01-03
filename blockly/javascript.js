@@ -10,6 +10,12 @@ Blockly.Arduino['drone_locked'] = function(block) {
   return code;
 };
 
+Blockly.Arduino['drone_take_off'] = function(block) {
+  // TODO: Assemble Arduino into code variable.
+  var code = '...;\n';
+  return code;
+};
+
 Blockly.Arduino['drone_turn_left'] = function(block) {
   // TODO: Assemble Arduino into code variable.
   var code = '...;\n';
@@ -29,12 +35,6 @@ Blockly.Arduino['drone_go_straight'] = function(block) {
 };
 
 Blockly.Arduino['drone_go_back'] = function(block) {
-  // TODO: Assemble Arduino into code variable.
-  var code = '...;\n';
-  return code;
-};
-
-Blockly.Arduino['drone_take_off'] = function(block) {
   // TODO: Assemble Arduino into code variable.
   var code = '...;\n';
   return code;
