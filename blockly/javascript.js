@@ -1,4 +1,4 @@
-Blockly.Arduino['drone_command_method'] = function(block) {
+Blockly.JavaScript['drone_command_method'] = function(block) {
   var variable_bte = Blockly.Arduino.nameDB_.getName(block.getFieldValue('BTE'), Blockly.Variables.NAME_TYPE);
   var value_name = Blockly.Arduino.valueToCode(block, 'NAME', Blockly.Arduino.ORDER_ATOMIC);
   var variable_samplinginterval = Blockly.Arduino.nameDB_.getName(block.getFieldValue('samplingInterval'), Blockly.Variables.NAME_TYPE);
