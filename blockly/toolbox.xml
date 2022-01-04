@@ -1,4 +1,10 @@
 <category id="Drone" name="無人機積木" colour="330">
+    <block type="drone_command_method">
+      <field name="BTE" id="BTE">藍芽</field>
+      <field name="samplingInterval" id="samplingInterval">250ms</field>
+    </block>
+    <category name="Variables" colour="#a55b80" custom="VARIABLE"></category>
+    
     <block type="drone_unlock"></block>
     <block type="drone_locked"></block>
     <block type="drone_take_off"></block>
