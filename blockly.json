@@ -6,7 +6,10 @@
     "blockly/javascript.js"
   ],
   "dependencies": [
-    "myBlocks.js"    
+    "myBlocks.js"
+    "lib/sweetalert.min.js",
+    "https://webduinoio.github.io/webduino-bluetooth-transport/src/WebBluetoothTransport.js",
+    "WebBluetooth-Blockly.js"
   ],
   "msg": "blockly/msg",
   "blocksMsg": "blockly/msg/blocks",
