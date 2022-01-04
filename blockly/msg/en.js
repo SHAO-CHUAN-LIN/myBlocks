@@ -1,1 +1,1 @@
-MSG.catExperimental = "Experimental"
+MSG.Drone = "Experimental"
