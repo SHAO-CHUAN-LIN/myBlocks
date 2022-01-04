@@ -3,7 +3,6 @@
       <field name="BTE" id="BTE">藍芽</field>
       <field name="samplingInterval" id="samplingInterval">250ms</field>
     </block>
-    <block type="enable_web_bluetooth"></block>
     <block type="drone_unlock"></block>
     <block type="drone_locked"></block>
     <block type="drone_take_off"></block>
