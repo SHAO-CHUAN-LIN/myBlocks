@@ -7,11 +7,6 @@ Blockly.JavaScript['drone_command_method'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['enable_web_bluetooth'] = function (block) {
-  var code = 'await enableWebBluetooth();\n';
-  return code;
-};
-
 Blockly.JavaScript['drone_unlock'] = function(block) {
   // TODO: Assemble Arduino into code variable.
   var code = '...;\n';
