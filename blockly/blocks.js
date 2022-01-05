@@ -1,15 +1,27 @@
+// Blockly.Blocks['drone_command_method'] = {
+//   init: function() {
+//     this.appendValueInput("NAME")
+//         .setCheck("String")
+//         .appendField("無人機使用")
+//         .appendField(new Blockly.FieldVariable("藍芽"), "BTE")
+//         .appendField("連線至");
+//     this.appendDummyInput()
+//         .appendField("類比取樣")
+//         .appendField(new Blockly.FieldVariable("250ms"), "samplingInterval");
+//     this.setNextStatement(true, null);
+//     this.setColour(195);
+//  this.setTooltip("");
+//  this.setHelpUrl("");
+//   }
+// };
+
 Blockly.Blocks['drone_command_method'] = {
   init: function() {
-    this.appendValueInput("NAME")
-        .setCheck("String")
-        .appendField("無人機使用")
-        .appendField(new Blockly.FieldVariable("藍芽"), "BTE")
-        .appendField("連線至");
     this.appendDummyInput()
-        .appendField("類比取樣")
-        .appendField(new Blockly.FieldVariable("250ms"), "samplingInterval");
+        .appendField("連線");
+    this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(195);
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
