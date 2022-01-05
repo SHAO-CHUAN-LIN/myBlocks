@@ -2,23 +2,29 @@
 
   'use strict';
 
-  function test() {
-    let device = await navigator.bluetooth.requestDevice(
+  function OpenPort() {
+    document.querySelector('button').addEventListener('click', async () => 
       {
-        filters:
-        [ 
-            { namePrefix: 'HC' } 
-        ],
-        optionalServices: [ 0xff0f ]
+        // Prompt user to select any serial port.
+        const port = await navigator.serial.requestPort();
+        await port.open({ baudRate: 115200 });
       });
-    let server = await device.gatt.connect();
-    let service = await server.getPrimaryService(0xff0f);
-    let characteristic = await service.getCharacteristic(0xfffc);
     
-    characteristic.writeValue(parseInt('24 4D 3C 10 C8 DC 05 DC 05 D0 07 E8 03 DC 05 DC 05 DC 05 DC 05 E4',16) );
+  function SendData(string){
+      const writer = port.writable.getWriter();
+      const data = new Uint8Array([104, 101, 108, 108, 111]); // hello
+      await writer.write(data);
     
-  }
+      //通過TextEncoderStream管道將文本發送到設備port.writable
+      const textEncoder = new TextEncoderStream();
+      const writableStreamClosed = textEncoder.readable.pipeTo(port.writable);
+      const writer = textEncoder.writable.getWriter();
+      await writer.write("hello");
+    
+      await port.close();
+    }
 
-  window.test = test;
+  window.openport = OpenPort;
+  window.SendData = SendData;
 
 }(window, window.document));
