@@ -1,8 +1,9 @@
 <category id="Drone" name="無人機積木" colour="345">
-    <block type="drone_command_method">
+<!--     <block type="drone_command_method">
       <field name="BTE" id="BTE">藍芽</field>
       <field name="samplingInterval" id="samplingInterval">250ms</field>
-    </block>
+    </block> -->
+    <block type="drone_command_method"></block>
     <block type="drone_unlock"></block>
     <block type="drone_locked"></block>
     <block type="drone_take_off"></block>
