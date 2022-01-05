@@ -10,9 +10,9 @@
         await port.open({ baudRate: 115200 });
       });
     
-  function SendData(string){
+  function drone_unlock(string){
       const writer = port.writable.getWriter();
-      const data = new Uint8Array([104, 101, 108, 108, 111]); // hello
+      const data = new Uint8Array(string); 
       await writer.write(data);
     
       //通過TextEncoderStream管道將文本發送到設備port.writable
