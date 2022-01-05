@@ -9,7 +9,7 @@
 
 Blockly.JavaScript['drone_command_method'] = function(block) {
   // TODO: Assemble Arduino into code variable.
-  var code = '...;\n';
+  var code = '藍芽'+OpenPort+'\n';
   return code;
 };
 
