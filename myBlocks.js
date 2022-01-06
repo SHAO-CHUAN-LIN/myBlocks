@@ -6,8 +6,9 @@
     document.querySelector('button').addEventListener('click', async () => 
       {
         // Prompt user to select any serial port.
-        const port = await navigator.serial.requestPort();
-        await port.open({ baudRate: 115200 });
+        const port = await navigator.serial.requestPort(); // Prompt user to select any serial port. //提示用戶選擇一個串列埠
+        const ports = await navigator.serial.getPorts();// 獲取用戶之前授予網站訪問權限的所有串列埠
+        await port.open({ baudRate: 115200 }); //等待串列埠連接，並已指定baud rate打開
       });
     
   function drone_unlock(string){
@@ -24,7 +25,7 @@
       await port.close();
     }
 
-  window.openport = OpenPort;
-  window.SendData = SendData;
+  window.OpenPort = OpenPort;
+  window.drone_unlock = drone_unlock;
 
 }(window, window.document));
