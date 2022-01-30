@@ -1,4 +1,4 @@
-<script>
+
         let stopFlag = false;
         async function startSerial() {
         // function startSerial() {
@@ -43,4 +43,7 @@
             // await port.close();
             // console.log("INFO: 接続を切断しました");
         }
-    </script>
+
+function serial_message(msg) {
+	serial_status.innerText = msg;
+}
