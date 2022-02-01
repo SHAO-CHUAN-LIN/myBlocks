@@ -1,4 +1,4 @@
-document.write('<input type="button" id="gamebutton_webserial_open" style="z-index:999" value="Select Port">');
+document.write('<input type="button" id="startSerial" style="z-index:999" value="Select Port">');
 
 let stopFlag = false;
         async function startSerial() {
