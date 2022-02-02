@@ -7,7 +7,7 @@
   ],
   "dependencies": [
     "myBlocks.js"
-    "WebSeria.js"
+    "WebSerial.js"
   ],
   "msg": "blockly/msg",
   "blocksMsg": "blockly/msg/blocks",
