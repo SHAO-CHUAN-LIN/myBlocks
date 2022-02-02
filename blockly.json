@@ -8,7 +8,6 @@
   "dependencies": [
     "WebSerial.js",
     "myBlocks.js"
-    
   ],
   "msg": "blockly/msg",
   "blocksMsg": "blockly/msg/blocks",
