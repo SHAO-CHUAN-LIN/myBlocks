@@ -6,7 +6,7 @@
     "blockly/javascript.js"
   ],
   "dependencies": [
-    "myBlocks.js"
+    "myBlocks.js",
     "WebSerial.js"
   ],
   "msg": "blockly/msg",
