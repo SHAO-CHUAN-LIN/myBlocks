@@ -2,20 +2,17 @@ document.write('<input type="button" id="startSerial" style="z-index:999" value=
 
 let stopFlag = false;
         async function startSerial() {
-        // function startSerial() {
             try {
                 console.log("INFO: 接続が確立しました");
                 stopFlag = false;
                 const port = await navigator.serial.requestPort();
                 // const port =  navigator.serial.requestPort();
                 await port.open({ baudRate: 115200 }); //wait baudrate data,or tun to catch
-                // port.open({ baudRate: 115200 });
                 while (port.readable) {
                     const reader = port.readable.getReader();
                     try {
                         while (!stopFlag) {
                             const { value, done } = await reader.read();
-                            // const { value, done } = reader.read();
                             if (done) {
                                 console.log("INFO: 読込モード終了");
                                 break;
