@@ -29,16 +29,16 @@ Blockly.Blocks['webserial_getid'] = {
     this.setColour(300);
   }
 
-Blockly.Blocks['drone_command_method'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField("連線");
-    this.setNextStatement(true, null);
-    this.setColour(230);
- this.setTooltip("");
- this.setHelpUrl("");
-  }
-};
+// Blockly.Blocks['drone_command_method'] = {
+//   init: function() {
+//     this.appendDummyInput()
+//         .appendField("連線");
+//     this.setNextStatement(true, null);
+//     this.setColour(230);
+//  this.setTooltip("");
+//  this.setHelpUrl("");
+//   }
+// };
 
 Blockly.Blocks['drone_unlock'] = {
   init: function() {
