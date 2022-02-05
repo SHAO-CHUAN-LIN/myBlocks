@@ -8,7 +8,7 @@
 // };
 Blockly.JavaScript['webserial_getid'] = function(block) {
   // TODO: Assemble Arduino into code variable.
-  var code = '...;\n';
+  var code = '...\n';
   return code;
 };
 
