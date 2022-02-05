@@ -5,7 +5,7 @@
 	function webserial_button_onclick(input_button, input_id) {
 		if (document.getElementById(input_id)) {
 			if (input_button=="open")
-				document.getElementById(input_id).addEventListener('click', async () => {buttonRequest();});
+				document.getElementById(input_id).addEventListener('click', async () => {startSerial();});
 			else
 				document.getElementById(input_id).addEventListener('click', async () => {buttonClose();});	
 		}
