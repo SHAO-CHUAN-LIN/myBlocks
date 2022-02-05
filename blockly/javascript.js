@@ -12,11 +12,11 @@ Blockly.JavaScript['webserial_getid'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['drone_command_method'] = function(block) {
-  // TODO: Assemble Arduino into code variable.
-  var code = '藍芽'+OpenPort+'\n';
-  return code;
-};
+// Blockly.JavaScript['drone_command_method'] = function(block) {
+//   // TODO: Assemble Arduino into code variable.
+//   var code = '藍芽'+OpenPort+'\n';
+//   return code;
+// };
 
 Blockly.JavaScript['drone_unlock'] = function(block) {
   // TODO: Assemble Arduino into code variable.
