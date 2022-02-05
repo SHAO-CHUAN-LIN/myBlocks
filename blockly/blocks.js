@@ -28,6 +28,7 @@ Blockly.Blocks['webserial_getid'] = {
     this.setOutput(true, null);  
     this.setColour(300);
   }
+};
 
 // Blockly.Blocks['drone_command_method'] = {
 //   init: function() {
