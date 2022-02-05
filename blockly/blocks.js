@@ -26,7 +26,7 @@ Blockly.Blocks['webserial_getid'] = {
   	]), "id_"); 	  
     this.setInputsInline(true);	 	  
     this.setOutput(true, null);  
-    this.setColour(300);
+    this.setColour(20);
   }
 };
 
