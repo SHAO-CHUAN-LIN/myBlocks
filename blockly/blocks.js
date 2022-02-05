@@ -18,7 +18,7 @@
 Blockly.Blocks['webserial_getid'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(Blockly.Msg.WEBSERIAL_GETID_SHOW);	  
+        .appendField(Blockly.Msg.WEBSERIAL_COMPORT_SELECT);	  
     this.appendDummyInput()
         .appendField(new Blockly.FieldDropdown([
 		[Blockly.Msg.WEBSERIAL_CONNECT_SHOW,"webserial_open"],
