@@ -4,6 +4,7 @@
       <field name="samplingInterval" id="samplingInterval">250ms</field>
     </block> -->
     <block type="webserial_getid"></block>
+<!--     <block type="drone_command_method"></block> -->
     <block type="drone_unlock"></block>
     <block type="drone_locked"></block>
     <block type="drone_take_off"></block>
