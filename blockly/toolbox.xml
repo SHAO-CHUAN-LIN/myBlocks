@@ -3,7 +3,7 @@
       <field name="BTE" id="BTE">藍芽</field>
       <field name="samplingInterval" id="samplingInterval">250ms</field>
     </block> -->
-    <block type="webserial_getid"></block>
+    <block type="webserial_get_serialport"></block>
 <!--     <block type="drone_command_method"></block> -->
     <block type="drone_unlock"></block>
     <block type="drone_locked"></block>
