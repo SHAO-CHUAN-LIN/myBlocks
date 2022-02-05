@@ -15,19 +15,19 @@
 //   }
 // };
 
-Blockly.Blocks['webserial_getid'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.WEBSERIAL_GETID_SHOW);	  
-    this.appendDummyInput()
-        .appendField(new Blockly.FieldDropdown([
-		[Blockly.Msg.WEBSERIAL_CONNECT_SHOW,"webserial_open"],
-		[Blockly.Msg.WEBSERIAL_CLOSE_SHOW,"webserial_close"]
-  	]), "id_"); 	  
-    this.setInputsInline(true);	 	  
-    this.setOutput(true, null);  
-    this.setColour(300);
-  }
+// Blockly.Blocks['webserial_getid'] = {
+//   init: function() {
+//     this.appendDummyInput()
+//         .appendField(Blockly.Msg.WEBSERIAL_GETID_SHOW);	  
+//     this.appendDummyInput()
+//         .appendField(new Blockly.FieldDropdown([
+// 		[Blockly.Msg.WEBSERIAL_CONNECT_SHOW,"webserial_open"],
+// 		[Blockly.Msg.WEBSERIAL_CLOSE_SHOW,"webserial_close"]
+//   	]), "id_"); 	  
+//     this.setInputsInline(true);	 	  
+//     this.setOutput(true, null);  
+//     this.setColour(300);
+//   }
 
 Blockly.Blocks['drone_command_method'] = {
   init: function() {
