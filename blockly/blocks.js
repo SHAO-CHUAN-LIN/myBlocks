@@ -15,7 +15,7 @@
 //   }
 // };
 
-Blockly.Blocks['webserial_getid'] = {
+Blockly.Blocks['webserial_get_serial port'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.WEBSERIAL_COMPORT_SELECT);	  
