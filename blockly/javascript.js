@@ -24,7 +24,7 @@ Blockly.JavaScript['drone_unlock'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['drone_locked'] = function(block) {
+Blockly.JavaScript['drone_lock'] = function(block) {
   // TODO: Assemble Arduino into code variable.
   var code = '...;\n';
   return code;
