@@ -6,8 +6,6 @@
 		if (document.getElementById(input_id)) {
 			if (input_button=="webserial_open")
 				document.getElementById(input_id).addEventListener('click', async () => {startSerial();});
-			else
-				document.getElementById(input_id).addEventListener('click', async () => {buttonClose();});	
 		}
 	}
   
