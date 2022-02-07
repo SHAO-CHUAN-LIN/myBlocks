@@ -53,7 +53,7 @@ Blockly.Blocks['drone_unlock'] = {
   }
 };
 
-Blockly.Blocks['drone_locked'] = {
+Blockly.Blocks['drone_lock'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("無人機上鎖");
