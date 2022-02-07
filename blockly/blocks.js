@@ -30,38 +30,18 @@ Blockly.Blocks['webserial_get_serialport'] = {
   }
 };
 
-// Blockly.Blocks['drone_command_method'] = {
-//   init: function() {
-//     this.appendDummyInput()
-//         .appendField("連線");
-//     this.setNextStatement(true, null);
-//     this.setColour(230);
-//  this.setTooltip("");
-//  this.setHelpUrl("");
-//   }
-// };
-
-Blockly.Blocks['drone_unlock'] = {
+Blockly.Blocks['robofly_command1'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("無人機解鎖");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(230);
- this.setTooltip("");
- this.setHelpUrl("");
-  }
-};
-
-Blockly.Blocks['drone_lock'] = {
-  init: function() {
+        .appendField(Blockly.Msg.ROBOFLY_SHOW);	  
     this.appendDummyInput()
-        .appendField("無人機上鎖");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
+        .appendField(new Blockly.FieldDropdown([
+		[Blockly.Msg.WEBSERIAL_UNLOCK_SHOW,"unlock"],
+ 		[Blockly.Msg.WEBSERIAL_LOCK_SHOW,"lock"]
+  	]), "lock_status"); 	  
+    this.setInputsInline(true);	 	  
+    this.setOutput(true, null);  
     this.setColour(230);
- this.setTooltip("");
- this.setHelpUrl("");
   }
 };
 
