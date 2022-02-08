@@ -1,5 +1,5 @@
 {
-  "types": ["webserial_get_serialport","robofly_command1","drone_take_off","drone_up_and_down","turn_left","turn_right","turn_go_straight","turn_go_back","drone_land"],
+  "types": ["webserial_get_serialport","robofly_unlock_command","drone_take_off","drone_up_and_down","turn_left","turn_right","turn_go_straight","turn_go_back","drone_land"],
   "category": "Drone",
   "scripts": [
     "blockly/blocks.js",
