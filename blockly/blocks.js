@@ -30,7 +30,7 @@ Blockly.Blocks['webserial_get_serialport'] = {
   }
 };
 
-Blockly.Blocks['robofly_command1'] = {
+Blockly.Blocks['robofly_unlock_command'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.ROBOFLY_SHOW);	  
