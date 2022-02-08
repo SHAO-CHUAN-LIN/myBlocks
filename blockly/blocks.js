@@ -27,9 +27,11 @@ Blockly.Blocks['webserial_get_serialport'] = {
   this.appendValueInput("id_")
       .setCheck("String");    	  
   this.setInputsInline(true);	  
-  this.setPreviousStatement(true);
-  this.setNextStatement(true);
-  this.setColour(60);
+//   this.setPreviousStatement(true);
+//   this.setNextStatement(true);
+  this.setInputsInline(true);	 	  
+  this.setOutput(true, null); 
+  this.setColour(30);
   }
 };
 
