@@ -4,7 +4,7 @@
       <field name="samplingInterval" id="samplingInterval">250ms</field>
     </block> -->
     <block type="webserial_get_serialport"></block>
-    <block type="robofly_command1"></block>
+    <block type="robofly_unlock_command"></block>
     <block type="drone_take_off"></block>
     <block type="drone_up_and_down"></block>
     <block type="drone_turn_left"></block>
