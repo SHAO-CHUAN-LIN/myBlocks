@@ -24,8 +24,8 @@ Blockly.Blocks['webserial_get_serialport'] = {
 		[Blockly.Msg.WEBSERIAL_CONNECT_SHOW,"open"],
 	    	[Blockly.Msg.WEBSERIAL_CLOSE_SHOW,"close"],
   	]), "button_"); 
-  this.appendValueInput("id_")
-      .setCheck("String");    	  
+//   this.appendValueInput("id_")
+//       .setCheck("String");    	  
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(30);
