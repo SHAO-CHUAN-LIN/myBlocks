@@ -26,7 +26,7 @@ Blockly.Blocks['webserial_get_serialport'] = {
   	]), "button_"); 
   this.appendValueInput("id_")
       .setCheck("String");    	  
-  this.setInputsInline(true);	  
+//   this.setInputsInline(true);	  
 //   this.setPreviousStatement(true);
 //   this.setNextStatement(true);
   this.setInputsInline(true);	 	  
