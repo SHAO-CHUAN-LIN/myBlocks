@@ -9,6 +9,6 @@
 		}
 	}
   
-	window.webserial_button_onclick = webserial_button_onclick;
+	window.webserial_get_serialport = webserial_get_serialport;
 
 }(window, window.document));
