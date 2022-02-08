@@ -2,9 +2,9 @@
 
   'use strict';
 	
-	function webserial_button_onclick(input_button, input_id) {
+	function webserial_get_serialport(input_button, input_id) {
 		if (document.getElementById(input_id)) {
-			if (input_button=="webserial_open")
+			if (input_button=="open")
 				document.getElementById(input_id).addEventListener('click', async () => {startSerial();});
 		}
 	}
