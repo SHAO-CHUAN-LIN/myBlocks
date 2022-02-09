@@ -6,12 +6,7 @@
 
 	
   function webserial_get_serialport(input_status, input_select) {
-// 		if (document.getElementById(input_serialportstatus)) {
-// 		var serialport_status = document.getElementById(input_serialportstatus);
-// 			if (serialport_status == "open")
 	  document.getElementById(input_status).style.display = input_select;
-// 	  document.getElementById(input_serialportstatus).addEventListener('click', async () => {startSerial();});
-// 		}
 	}
 	
 // 	function robofly_unlock_command(input_lock_status) {
