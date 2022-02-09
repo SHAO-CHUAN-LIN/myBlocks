@@ -8,7 +8,7 @@
 // 		if (document.getElementById(input_serialportstatus)) {
 // 		var serialport_status = document.getElementById(input_serialportstatus);
 // 			if (serialport_status == "open")
-				document.getElementById(input_id).style.display = input_show;
+			document.getElementById(input_id).style.display = input_show;
 // 				document.getElementById(input_serialportstatus).addEventListener('click', async () => {startSerial();});
 // 		}
 	}
