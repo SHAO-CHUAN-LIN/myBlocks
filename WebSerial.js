@@ -6,20 +6,20 @@ let serial_buttonRequest = document.getElementById('button_webserial_open');
 let serial_uint8 = document.getElementById('serial_uint8');
 let serial_dataRequest = document.getElementById('serial_sendUint8');
 
-let serial_port = null;
+let port = null;
 
 serial_buttonRequest.addEventListener('click', async () => {startSerial();});
 serial_dataRequest.addEventListener('click', async () => {send_data();});
 
 async function startSerial() {
 	const filters = [];
-	const serial_port = await navigator.serial.requestPort({ filters }); //過濾可搜尋到的device
-	const { usbProductId, usbVendorId } = serial_port.getInfo(); //提示用戶選擇device
+	const port = await navigator.serial.requestPort({ filters }); //過濾可搜尋到的device
+	const { usbProductId, usbVendorId } = port.getInfo(); //提示用戶選擇device
 	
     try{
         console.log("INFO: Start to connect...");
-//         serial_port = await navigator.serial.requestPort();
-        await serial_port.open({ baudRate: 115200 }); //wait baudrate data,or jump to catch
+//         port = await navigator.serial.requestPort();
+        await port.open({ baudRate: 115200 }); //wait baudrate data,or jump to catch
     }
     catch(error){
         console.log("ERRORR:Port is not open");
@@ -32,7 +32,7 @@ async function send_data() {
 	    var intArray = robotfly_status().value.split(","); 
 // 	    data = String.fromCharCode.apply(null, intArray);
 	    
-	    const writer = serial_port.writable.getWriter();
+	    const writer = port.writable.getWriter();
 	    const data = new Uint16Array(intArray);
 	    await writer.write(data);
 	    writer.releaseLock();
