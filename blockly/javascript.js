@@ -15,7 +15,7 @@ Blockly.JavaScript['webserial_get_serialport'] = function(block) {
 
 Blockly.JavaScript['robofly_unlock_command'] = function(block) {
   var value_lock_status = block.getFieldValue('lock_status');
-  var code = "robotfly_basic('"+ value_lock_status +"')";
+  var code = "robotfly_status('"+ value_lock_status +"')";
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
