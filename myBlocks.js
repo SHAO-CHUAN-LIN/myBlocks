@@ -6,10 +6,10 @@
 	
 	function webserial_get_serialport(input_serialportstatus) {
 // 		if (document.getElementById(input_serialportstatus)) {
-		var serialport_status = document.getElementById(input_serialportstatus);
-			if (serialport_status == "open")
+// 		var serialport_status = document.getElementById(input_serialportstatus);
+// 			if (serialport_status == "open")
 				document.getElementById(input_serialportstatus).style.display = block;
-				document.getElementById(input_serialportstatus).addEventListener('click', async () => {startSerial();});
+// 				document.getElementById(input_serialportstatus).addEventListener('click', async () => {startSerial();});
 // 		}
 	}
 	
