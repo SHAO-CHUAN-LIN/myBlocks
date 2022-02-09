@@ -12,10 +12,10 @@
 // 		}
 	}
 	
-	function robofly_unlock_command(input_cmd) {
-		serial_uint8.value = input_cmd;
-		serial_sendUint8.click();
-	}
+// 	function robofly_unlock_command(input_lock_status) {
+// 		serial_uint8.value = input_lock_status;
+// 		serial_sendUint8.click();
+// 	}
   
 	window.webserial_get_serialport = webserial_get_serialport;
 
