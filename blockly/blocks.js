@@ -22,7 +22,7 @@ Blockly.Blocks['webserial_get_serialport'] = {
     this.appendDummyInput()
         .appendField(new Blockly.FieldDropdown([
 		[Blockly.Msg.WEBSERIAL_CONNECT_SHOW,"open"],
-	    	[Blockly.Msg.WEBSERIAL_CLOSE_SHOW,"close"],
+// 	    	[Blockly.Msg.WEBSERIAL_CLOSE_SHOW,"close"]
   	]), "serialport_status");   	  
     this.setInputsInline(true);	 	  
     this.setOutput(true, null); 
@@ -62,8 +62,8 @@ Blockly.Blocks['drone_up_and_down'] = {
       this.appendDummyInput()
           .appendField("無人機")
           .appendField(new Blockly.FieldDropdown([
-	      ["上昇","ITEM1"],
-	      ["下降","ITEM2"]
+	      ["上昇","up"],
+	      ["下降","down"]
       ]), "dropdown");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
