@@ -30,9 +30,10 @@ async function startSerial() {
 async function send_data() {
     try{
 	    var intArray = robotfly_status().value.split(","); 
-	    data = String.fromCharCode.apply(null, intArray);
-	    const writer = port.writable.getWriter();
-	    const data = new Uint8Array(data);
+// 	    data = String.fromCharCode.apply(null, intArray);
+	    
+	    const writer = serial_port.writable.getWriter();
+	    const data = new Uint16Array(intArray);
 	    await writer.write(data);
 	    writer.releaseLock();
     }
