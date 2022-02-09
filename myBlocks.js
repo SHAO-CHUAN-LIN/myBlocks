@@ -17,7 +17,7 @@
 // 		if (document.getElementById(input_serialportstatus)) {
 // 		var serialport_status = document.getElementById(input_serialportstatus);
 // 			if (serialport_status == "open")
-			document.getElementById(input_status).style.display = input_select;
+			document.getElementById(input_status).style.display = "block";
 // 				document.getElementById(input_serialportstatus).addEventListener('click', async () => {startSerial();});
 // 		}
 	}
