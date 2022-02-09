@@ -13,7 +13,7 @@ serial_dataRequest.addEventListener('click', async () => {send_data();});
 
 async function startSerial() {
 	const filters = [];
-	const serial_port = await navigator.serial.requestPort({ filters }); //過濾device
+	const serial_port = await navigator.serial.requestPort({ filters }); //過濾可搜尋到的device
 	const { usbProductId, usbVendorId } = serial_port.getInfo(); //提示用戶選擇device
 	
     try{
