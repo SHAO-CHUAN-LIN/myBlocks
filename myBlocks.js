@@ -6,7 +6,7 @@
 	
 	function webserial_get_serialport(input_serialportstatus) {
 // 		if (document.getElementById(input_serialportstatus)) {
-		var serialport_status = document.getElementById(input_serialportstatus;
+		var serialport_status = document.getElementById(input_serialportstatus);
 			if (input_serialportstatus == "open")
 				document.getElementById(input_serialportstatus).addEventListener('click', async () => {startSerial();});
 // 		}
