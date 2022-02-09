@@ -28,7 +28,7 @@ Blockly.Blocks['webserial_get_serialport'] = {
 	.appendField(Blockly.Msg.WEBSERIAL_SHOW_SHOW)	  
         .appendField(new Blockly.FieldDropdown([
 		["Y","block"],
-// 		["N","none"]
+		["N","none"]
   	]), "show_"); 
     this.setInputsInline(true);	 	  
     this.setOutput(true, null); 
