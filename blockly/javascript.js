@@ -7,8 +7,8 @@
 //   return code;
 // };
 Blockly.JavaScript['webserial_get_serialport'] = function(block) {
-  var value_button = block.getFieldValue('button_');   
-  var value_id = Blockly.JavaScript.valueToCode(block, 'id_', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_button = block.getFieldValue('serialport_status');   
+//   var value_id = Blockly.JavaScript.valueToCode(block, 'id_', Blockly.JavaScript.ORDER_ATOMIC);
   var code = 'webserial_button_onclick("'+value_button+'");';
   return code;
 };
