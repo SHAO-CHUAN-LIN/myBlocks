@@ -4,8 +4,8 @@
   let serial_uint8 = document.getElementById('serial_uint8');
   let serial_sendUint8 = document.getElementById('serial_sendUint8');
 	
-	function webserial_get_serialport(input_serialport_status) {
-		if (document.getElementById(input_serialport_status)) {
+	function webserial_get_serialport(input_serialportstatus) {
+		if (document.getElementById(input_serialportstatus)) {
 			if (input_button=="open")
 				document.getElementById(input_id).addEventListener('click', async () => {startSerial();});
 		}
