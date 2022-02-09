@@ -23,7 +23,13 @@ Blockly.Blocks['webserial_get_serialport'] = {
         .appendField(new Blockly.FieldDropdown([
 		[Blockly.Msg.WEBSERIAL_CONNECT_SHOW,"open"],
 	    	[Blockly.Msg.WEBSERIAL_CLOSE_SHOW,"close"]
-  	]), "status_");   	  
+  	]), "status_");
+    this.appendDummyInput()  
+	.appendField(Blockly.Msg.WEBSERIAL_SHOW_SHOW)	  
+        .appendField(new Blockly.FieldDropdown([
+		["Y","block"],
+// 		["N","none"]
+  	]), "show_"); 
     this.setInputsInline(true);	 	  
     this.setOutput(true, null); 
     this.setColour(30);
