@@ -6,8 +6,8 @@
 	
 	function webserial_get_serialport(input_serialportstatus) {
 		if (document.getElementById(input_serialportstatus)) {
-			if (input_button=="open")
-				document.getElementById(input_id).addEventListener('click', async () => {startSerial();});
+			if (input_serialportstatus == "open")
+				document.getElementById(input_serialportstatus).addEventListener('click', async () => {startSerial();});
 		}
 	}
 	
