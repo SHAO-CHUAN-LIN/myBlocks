@@ -54,7 +54,7 @@ Blockly.Blocks['robofly_unlock_command'] = {
 Blockly.Blocks['drone_take_off'] = {
    init: function() {
     this.appendDummyInput()
-        .appendField(Blockly.Msg.ROBOFLY_SHOW);
+        .appendField(Blockly.Msg.ROBOFLY_SHOW + "無人機起飛");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
