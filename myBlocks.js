@@ -15,6 +15,6 @@
 // 		}
 // 	}
   
-	window.webserial_get_serialport = webserial_get_serialport;
+	window.webserial_port = webserial_port;
 
 }(window, window.document));
