@@ -6,7 +6,7 @@
 
 	
   function webserial_get_serialport(input_status, input_select) {
-	  document.getElementById(input_status).style.display = input_select;
+	  document.getElementById(input_status).style.display = "";
 	}
 //   function webserial_get_serialport(input_status, input_select) {
 // 	  if (document.getElementById(input_status)) {
