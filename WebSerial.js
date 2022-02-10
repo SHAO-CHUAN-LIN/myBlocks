@@ -44,7 +44,7 @@ async function send_data() {
 
 function robotfly_status() {
 	function robofly_unlock_command(input_lock_status) {
-		lock_status = document.getElementById(input_lock_status);
+		const lock_status = document.getElementById(input_lock_status);
 		if (lock_status =="unlock")
 			var status = "0x24,0x4d,0x3c,0x10,0xc8,0xdc,0x05,0xdc,0x05,0xd0,0x07,0xe8,0x03,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xe4";
 		else if (lock_status =="lock")
