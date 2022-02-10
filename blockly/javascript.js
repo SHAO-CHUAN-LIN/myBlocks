@@ -8,7 +8,7 @@
 // };
 Blockly.JavaScript['webserial_get_serialport'] = function(block) {
   var value_status = block.getFieldValue('status_');   
-  var value_select = Blockly.JavaScript.valueToCode(block, 'select_', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_select = block.getFieldValue('select_');
   var code = 'webserial_port("'+value_status+'","'+value_select+'")';
   return code;
 };
