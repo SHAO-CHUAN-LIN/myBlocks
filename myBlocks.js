@@ -3,6 +3,7 @@
   'use strict';
 	
 //   let serial_buttonRequest = document.getElementById('button_webserial_open');
+//   let serial_buttonClose = document.getElementById('button_webserial_close');
 
 	
   function webserial_port(input_status, input_select) {
