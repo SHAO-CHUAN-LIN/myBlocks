@@ -9,7 +9,6 @@
   function webserial_port(input_status, input_select) {
 	  document.getElementById(input_status).style.display = input_select;
 // 	  serial_buttonRequest.style.display = input_select;
-// 	  serial_buttonRequest.style.display = "block";
 	}
 //   function webserial_port(input_status, input_select) {
 // 	  if (document.getElementById(input_status)) {
