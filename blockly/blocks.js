@@ -36,6 +36,21 @@ Blockly.Blocks['webserial_get_serialport'] = {
   }
 };
 
+Blockly.Blocks['webserial_serialport'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(Blockly.Msg.WEBSERIAL_COMPORT_SELECT);	  
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldDropdown([
+		[Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW,"open"],
+	    	[Blockly.Msg.WEBSERIAL_BUTTON_CLOSE_SHOW,"close"]
+  	]), "status_");
+    this.setInputsInline(true);	 	  
+    this.setOutput(true, null); 
+    this.setColour(30);
+  }
+};
+
 Blockly.Blocks['robofly_unlock_command'] = {
   init: function() {
     this.appendDummyInput()
