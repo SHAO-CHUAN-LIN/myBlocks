@@ -15,8 +15,10 @@ Blockly.JavaScript['webserial_get_serialport'] = function(block) {
 
 Blockly.JavaScript['robofly_unlock_command'] = function(block) {
   var value_lock_status = block.getFieldValue('lock_status');
-  var code = "robotfly_status('"+ value_lock_status +"')";
-  return [code, Blockly.JavaScript.ORDER_NONE];
+//   var code = "robotfly_status('"+ value_lock_status +"')";
+  var code = 'robotfly_status("0x24,0x4d,0x3c,0x10,0xc8,0xdc,0x05,0xdc,0x05,0xd0,0x07,0xe8,0x03,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xe4")';
+//   return [code, Blockly.JavaScript.ORDER_NONE];
+  return code;
 };
 
 Blockly.JavaScript['drone_take_off'] = function(block) {
