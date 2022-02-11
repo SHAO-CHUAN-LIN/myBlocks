@@ -13,9 +13,9 @@
 	
   function webserial_port(input_status) {
 // 	  if (document.getElementById(input_status)) {
-		  if (input_status=="open")
+		  if (input_status == "open")
 			  serial_buttonRequest.style.display = "block";
-		  else if(input_status=="close")
+		  else if(input_status == "close")
 			  serial_buttonClose.style.display = "block";
 		  else
 			  return "";
