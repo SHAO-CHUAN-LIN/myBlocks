@@ -16,7 +16,7 @@
 		  if (input_status=="open")
 			  serial_buttonRequest.style.display = "block";
 		  else if(input_status=="close")
-			  serial_buttonRequest.style.display = "none";
+			  serial_buttonClose.style.display = "block";
 		  else
 			  return "";
 // 		  document.getElementById(input_id).addEventListener('click', async () => {startSerial();});	
