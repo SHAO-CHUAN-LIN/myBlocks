@@ -11,7 +11,7 @@
 // 	  serial_buttonRequest.style.display = input_select;
 // 	  serial_buttonRequest.style.display = "block";
 	}
-//   function webserial_get_serialport(input_status, input_select) {
+//   function webserial_port(input_status, input_select) {
 // 	  if (document.getElementById(input_status)) {
 // 			if (input_status=="open")
 // 				document.getElementById(input_id).addEventListener('click', async () => {startSerial();});	
