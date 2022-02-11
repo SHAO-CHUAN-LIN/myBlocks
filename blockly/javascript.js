@@ -13,6 +13,12 @@ Blockly.JavaScript['webserial_get_serialport'] = function(block) {
   return code;
 };
 
+Blockly.JavaScript['webserial_serialport'] = function(block) {
+  var value_status = block.getFieldValue('status');   
+  var code = 'webserial_port("'+value_status+'")';
+  return code;
+};
+
 Blockly.JavaScript['robofly_unlock_command'] = function(block) {
   var value_lock_status = block.getFieldValue('lock_status');
 //   var code = "robotfly_status('"+ value_lock_status +"')";
