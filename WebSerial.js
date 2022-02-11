@@ -4,22 +4,22 @@ document.write('<input type="text" id="serial_uint8" style="position:absolute;di
 document.write('<button id="serial_sendUint8" style="position:absolute;display:none;z-index:999">Send Uint8Array</button>');
 
 let serial_buttonRequest = document.getElementById('button_webserial_open');
+let serial_buttonClose = document.getElementById('button_webserial_close');
 let serial_uint8 = document.getElementById('serial_uint8');
 let serial_dataRequest = document.getElementById('serial_sendUint8');
 
 let port = null;
 
-serial_buttonRequest.addEventListener('click', async () => {startSerial();});
-serial_dataRequest.addEventListener('click', async () => {send_data();});
 
+serial_buttonRequest.addEventListener('click', async () => {startSerial();});
 async function startSerial() {
-	const filters = [];
-	const port = await navigator.serial.requestPort({ filters }); //過濾可搜尋到的device
-	const { usbProductId, usbVendorId } = port.getInfo(); //提示用戶選擇device
+// 	const filters = [];
+// 	const port = await navigator.serial.requestPort({ filters }); //filter device
+// 	const { usbProductId, usbVendorId } = port.getInfo(); //remind user select device
 	
     try{
         console.log("INFO: Start to connect...");
-//         port = await navigator.serial.requestPort();
+        port = await navigator.serial.requestPort();
         await port.open({ baudRate: 115200 }); //wait baudrate data,or jump to catch
     }
     catch(error){
@@ -28,6 +28,22 @@ async function startSerial() {
     }
 }
 
+
+serial_buttonClose.addEventListener('click', async () => {closeSerial();});
+async function closeSerial(){
+	try{
+		port.close();
+		port = null;
+	}
+	catch(error){
+		console.log("ERRORR:Port is not open");
+		console.log(error);
+	}
+
+}
+
+
+serial_dataRequest.addEventListener('click', async () => {send_data();});
 async function send_data() {
     try{
 	    var intArray = robotfly_status().value.split(","); 
