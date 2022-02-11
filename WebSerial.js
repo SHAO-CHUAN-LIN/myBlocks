@@ -14,11 +14,10 @@
   function webserial_port(input_status) {
 // 	  if (document.getElementById(input_status)) {
 	  console.log("test");
-// 	  let status_value = document.getElementById(input_status)
 		  if (input_status == "open")
-			  serial_buttonRequest.style.display = 'block';
+			  document.getElementById('button_webserial_open').style.display = "block";
 		  else if(input_status == "close")
-			  serial_buttonClose.style.display = 'block';
+			  document.getElementById('button_webserial_close').style.display = "block";
 // 		  else
 // 			  return "";
 // 		  document.getElementById(input_id).addEventListener('click', async () => {startSerial();});	
