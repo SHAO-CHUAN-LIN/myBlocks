@@ -47,7 +47,7 @@ Blockly.Blocks['webserial_serialport'] = {
   	]), "status");
     this.setInputsInline(true);	 	  
     this.setOutput(true, null); 
-    this.setColour(30);
+    this.setColour(195);
   }
 };
 
