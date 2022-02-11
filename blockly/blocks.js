@@ -21,8 +21,8 @@ Blockly.Blocks['webserial_get_serialport'] = {
         .appendField(Blockly.Msg.WEBSERIAL_COMPORT_SELECT);	  
     this.appendDummyInput()
         .appendField(new Blockly.FieldDropdown([
-		[Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW,"open"],
-	    	[Blockly.Msg.WEBSERIAL_BUTTON_CLOSE_SHOW,"close"]
+		[Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW,"button_webserial_open"],
+	    	[Blockly.Msg.WEBSERIAL_BUTTON_CLOSE_SHOW,"button_webserial_close"]
   	]), "status_");
     this.appendDummyInput()  
 	.appendField(Blockly.Msg.WEBSERIAL_SHOW_SHOW)	  
