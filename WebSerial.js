@@ -16,7 +16,7 @@
 	  console.log("test");
 // 	  let status_value = document.getElementById(input_status)
 		  if (input_status == "open")
-			  serial_buttonRequest.style.display = "block";
+			  serial_buttonRequest.style.display = "";
 		  else if(input_status == "close")
 			  serial_buttonClose.style.display = "block";
 // 		  else
