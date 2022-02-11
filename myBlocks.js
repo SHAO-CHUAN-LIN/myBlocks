@@ -2,11 +2,12 @@
 
   'use strict';
 	
-//   let serial_buttonRequest = document.getElementById('button_webserial_open');
+  let serial_buttonRequest = document.getElementById('button_webserial_open');
 
 	
   function webserial_port(input_status, input_select) {
-	  document.getElementById(input_status).style.display = input_select;
+// 	  document.getElementById(input_status).style.display = input_select;
+	  serial_buttonRequest.style.display = input_select;
 	}
 //   function webserial_get_serialport(input_status, input_select) {
 // 	  if (document.getElementById(input_status)) {
