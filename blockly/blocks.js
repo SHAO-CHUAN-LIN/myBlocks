@@ -18,7 +18,7 @@
 Blockly.Blocks['webserial_get_serialport'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(Blockly.Msg.WEBSERIAL_COMPORT_SELECT);	  
+        .appendField(Blockly.Msg.WEBSERIAL_SELECT_COMPORT);	  
     this.appendDummyInput()
         .appendField(new Blockly.FieldDropdown([
 		[Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW,"button_webserial_open"],
@@ -39,7 +39,7 @@ Blockly.Blocks['webserial_get_serialport'] = {
 Blockly.Blocks['webserial_serialport'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(Blockly.Msg.WEBSERIAL_COMPORT_SELECT);	  
+        .appendField(Blockly.Msg.WEBSERIAL_SELECT_PORT);	  
     this.appendDummyInput()
         .appendField(new Blockly.FieldDropdown([
 		[Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW,"open"],
