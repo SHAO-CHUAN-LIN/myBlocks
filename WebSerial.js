@@ -1,4 +1,5 @@
 document.write('<input type="button" id="button_webserial_open" style="display:none;z-index:999" value="選擇序列埠">');
+document.write('<input type="button" id="button_webserial_close" style="display:none;z-index:999" value="關閉序列埠">');
 document.write('<input type="text" id="serial_uint8" style="position:absolute;display:none;z-index:999">');
 document.write('<button id="serial_sendUint8" style="position:absolute;display:none;z-index:999">Send Uint8Array</button>');
 
