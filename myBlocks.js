@@ -5,8 +5,9 @@
   let serial_buttonRequest = document.getElementById('button_webserial_open');
 
 	
-  function webserial_port(input_id, input_show) {
-	  serial_buttonRequest.style.display = input_show;
+  function webserial_port(input_status, input_select) {
+	  document.getElementById(input_status).style.display = input_select;
+	  serial_buttonRequest.style.display = input_select;
 // 	  serial_buttonRequest.style.display = "block";
 	}
 //   function webserial_get_serialport(input_status, input_select) {
