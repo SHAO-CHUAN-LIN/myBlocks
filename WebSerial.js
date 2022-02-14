@@ -11,7 +11,7 @@
 // 	  serial_buttonRequest.style.display = input_select;
 	}
 	
-  function webserial_port(input_status) {
+  function webserial_port("test") {
 // 	  if (document.getElementById(input_status)) {
 	  console.log(input_status);
 		  if (input_status == "open")
