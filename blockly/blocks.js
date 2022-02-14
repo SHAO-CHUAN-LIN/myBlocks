@@ -47,7 +47,8 @@ Blockly.Blocks['webserial_serialport'] = {
 	    	[Blockly.Msg.WEBSERIAL_BUTTON_CLOSE_SHOW,"close"]
   	]), "status");
     this.setInputsInline(true);	 	  
-    this.setOutput(true, null); 
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
     this.setColour(195);
   }
 };
@@ -62,7 +63,8 @@ Blockly.Blocks['robofly_unlock_command'] = {
  		[Blockly.Msg.WEBSERIAL_LOCK_SHOW,"lock"]
   	]), "lock_status"); 	  
     this.setInputsInline(true);	 	  
-    this.setOutput(true, null);  
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null); 
     this.setColour(230);
   }
 };
