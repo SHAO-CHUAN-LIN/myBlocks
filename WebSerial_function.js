@@ -52,6 +52,7 @@ async function send_data(command) {
 	    
 	    const writer = port.writable.getWriter();
 	    const data = new Uint16Array(intArray);
+	    console.log(data);
 	    await writer.write(data);
 	    writer.releaseLock();
     }
