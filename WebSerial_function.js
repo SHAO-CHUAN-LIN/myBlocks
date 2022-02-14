@@ -51,7 +51,7 @@ async function send_data(command) {
 	    var data = String.fromCharCode.apply(null, intArray);
 	    
 	    const writer = port.writable.getWriter();
-	    const ascii_data = new Uint16Array(data);
+	    const ascii_data = new Uint8Array(data);
 	    console.log(ascii_data);
 	    await writer.write(ascii_data);
 	    writer.releaseLock();
