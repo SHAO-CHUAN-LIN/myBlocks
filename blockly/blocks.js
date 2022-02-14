@@ -86,9 +86,9 @@ Blockly.Blocks['drone_up_and_down'] = {
       this.appendDummyInput()
           .appendField("無人機")
           .appendField(new Blockly.FieldDropdown([
-	      ["上昇","up"],
-	      ["下降","down"]
-      ]), "dropdown");
+	      ["上昇","take_off"],
+	      ["下降","landing"]
+      ]), "status_");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
       this.setColour(20);
