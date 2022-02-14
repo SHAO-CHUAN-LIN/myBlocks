@@ -13,7 +13,8 @@
 	
   function webserial_port(input_status) {
 // 	  if (document.getElementById(input_status)) {
-	  console.log("test");
+// 	  console.log("test");
+	  console.log(input_status);
 		  if (input_status == "open")
 			  document.getElementById('button_webserial_open').style.display = "block";
 		  else if(input_status == "close")
