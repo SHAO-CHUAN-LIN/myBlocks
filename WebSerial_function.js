@@ -29,18 +29,18 @@ async function startSerial() {
 }
 
 
-serial_buttonClose.addEventListener('click', async () => {closeSerial();});
-async function closeSerial(){
-	try{
-		await port.close();
-		await port = null;
-	}
-	catch(error){
-		console.log("ERRORR:Port is not open");
-		console.log(error);
-	}
+// serial_buttonClose.addEventListener('click', async () => {closeSerial();});
+// async function closeSerial(){
+// 	try{
+// 		await port.close();
+// 		await port = null;
+// 	}
+// 	catch(error){
+// 		console.log("ERRORR:Port is not open");
+// 		console.log(error);
+// 	}
 
-}
+// }
 
 
 // serial_send_data.addEventListener('click', async () => {send_data();});
