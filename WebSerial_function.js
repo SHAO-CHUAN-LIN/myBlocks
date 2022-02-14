@@ -48,12 +48,12 @@ async function startSerial() {
 async function send_data(command) {
     try{
 	    var intArray = command.split(","); 
-// 	    data = String.fromCharCode.apply(null, intArray);
+	    var data = String.fromCharCode.apply(null, intArray);
 	    
 	    const writer = port.writable.getWriter();
-	    const data = new Uint16Array(intArray);
-	    console.log(data);
-	    await writer.write(data);
+	    const ascii_data = new Uint16Array(data);
+	    console.log(ascii_data);
+	    await writer.write(ascii_data);
 	    writer.releaseLock();
     }
     catch(error){
