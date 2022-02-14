@@ -5,8 +5,8 @@ document.write('<button id="serial_sendUint8" style="position:absolute;display:n
 
 let serial_buttonRequest = document.getElementById('button_webserial_open');
 let serial_buttonClose = document.getElementById('button_webserial_close');
-let serial_uint8 = document.getElementById('serial_uint8');
-let serial_dataRequest = document.getElementById('serial_sendUint8');
+// let serial_uint8 = document.getElementById('serial_uint8');
+// let serial_send_data = document.getElementById('serial_sendUint8');
 
 let port = null;
 
@@ -32,8 +32,8 @@ async function startSerial() {
 serial_buttonClose.addEventListener('click', async () => {closeSerial();});
 async function closeSerial(){
 	try{
-		port.close();
-		port = null;
+		await port.close();
+		await port = null;
 	}
 	catch(error){
 		console.log("ERRORR:Port is not open");
@@ -43,7 +43,7 @@ async function closeSerial(){
 }
 
 
-serial_dataRequest.addEventListener('click', async () => {send_data();});
+// serial_send_data.addEventListener('click', async () => {send_data();});
 async function send_data() {
     try{
 	    var intArray = robotfly_status().value.split(","); 
