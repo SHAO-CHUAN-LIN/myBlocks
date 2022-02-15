@@ -67,7 +67,7 @@ Blockly.Blocks['magic_command'] = {
 Blockly.Blocks['magic_dispel'] = {
    init: function() {
     this.appendDummyInput()
-        .appendField("回來吧，無人機");
+        .appendField("回來吧，無人機。");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
