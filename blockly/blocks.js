@@ -69,7 +69,7 @@ Blockly.Blocks['robofly_unlock_command'] = {
   }
 };
 
-Blockly.Blocks['robofly_magic_command'] = {
+Blockly.Blocks['magic_command'] = {
    init: function() {
     this.appendDummyInput()
         .appendField("重生吧、無人機、我還你原形，解除、解開束縛，霹靂卡霹靂拉拉波波力那貝貝魯多！！");
