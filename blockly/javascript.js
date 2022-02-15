@@ -27,9 +27,8 @@ Blockly.JavaScript['magic_command'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['drone_take_off'] = function(block) {
-  // TODO: Assemble Arduino into code variable.
-  var code = '...;\n';
+Blockly.JavaScript['magic_dispel'] = function(block) {
+  var code = 'send_data("0x24,0x4d,0x3c,0x10,0xc8,0xdc,0x05,0xdc,0x05,0xe8,0x03,0xe8,0x03,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xd8");\n';
   return code;
 };
 
