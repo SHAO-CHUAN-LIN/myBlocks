@@ -69,6 +69,18 @@ Blockly.Blocks['robofly_unlock_command'] = {
   }
 };
 
+Blockly.Blocks['robofly_magic_command'] = {
+   init: function() {
+    this.appendDummyInput()
+        .appendField("重生吧、無人機、我還你原形，解除、解開束縛，霹靂卡霹靂拉拉波波力那貝貝魯多！！");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(65);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
 Blockly.Blocks['drone_take_off'] = {
    init: function() {
     this.appendDummyInput()
@@ -84,7 +96,7 @@ Blockly.Blocks['drone_take_off'] = {
 Blockly.Blocks['drone_up_and_down'] = {
     init: function() {
       this.appendDummyInput()
-          .appendField("無人機")
+          .appendField("Blockly.Msg.ROBOFLY_SHOW")
           .appendField(new Blockly.FieldDropdown([
 	      ["上昇","take_off"],
 	      ["下降","landing"]
