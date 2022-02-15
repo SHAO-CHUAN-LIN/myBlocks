@@ -12,14 +12,14 @@
 	}
 	
   function webserial_port(input_status) {
-	  console.log("test");
-// 	  console.log(input_status);
+// 	  console.log("test");
+	  console.log(input_status);
 		  if (input_status == "open")
 			  document.getElementById('button_webserial_open').style.display = "block";
 		  else if(input_status == "close")
 			  document.getElementById('button_webserial_close').style.display = "block";
-		  else
-			  return "";
+// 		  else
+// 			  return "";
 	}
 	
 	window.webserial_get_port = webserial_get_port;
