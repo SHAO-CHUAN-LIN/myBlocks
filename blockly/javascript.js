@@ -1,11 +1,3 @@
-// Blockly.JavaScript['drone_command_method'] = function(block) {
-//   var variable_bte = Blockly.JavaScript.nameDB_.getName(block.getFieldValue('BTE'), Blockly.Variables.NAME_TYPE);
-//   var value_name = Blockly.JavaScript.valueToCode(block, 'NAME', Blockly.JavaScript.ORDER_ATOMIC);
-//   var variable_samplinginterval = Blockly.JavaScript.nameDB_.getName(block.getFieldValue('samplingInterval'), Blockly.Variables.NAME_TYPE);
-//   // TODO: Assemble Arduino into code variable.
-//   var code = '...;\n';
-//   return code;
-// };
 Blockly.JavaScript['webserial_get_serialport'] = function(block) {
   var value_status = block.getFieldValue('status_');   
   var value_select = block.getFieldValue('select_');
