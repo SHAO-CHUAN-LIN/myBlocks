@@ -29,16 +29,16 @@ async function startSerial() {
 }
 
 
-serial_buttonClose.addEventListener('click', async () => {closeSerial();});
-async function closeSerial(){
-	try{
+// serial_buttonClose.addEventListener('click', async () => {closeSerial();});
+// async function closeSerial(){
+// 	try{
 // 		port.close();
 // 		port = null;
-	}
-	catch(error){
-		console.log(error);
-	}
-}
+// 	}
+// 	catch(error){
+// 		console.log(error);
+// 	}
+// }
 
 
 
