@@ -32,8 +32,8 @@ async function startSerial() {
 serial_buttonClose.addEventListener('click', async () => {closeSerial();});
 async function closeSerial(){
 	try{
-		await port.close();
-		await port = null;
+// 		await port.close();
+// 		await port = null;
 	}
 	catch(error){
 		console.log(error);
