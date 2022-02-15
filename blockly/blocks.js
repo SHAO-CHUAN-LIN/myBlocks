@@ -79,7 +79,7 @@ Blockly.Blocks['drone_take_off'] = {
 Blockly.Blocks['drone_up_and_down'] = {
     init: function() {
       this.appendDummyInput()
-          .appendField("Blockly.Msg.ROBOFLY_SHOW")
+          .appendField(Blockly.Msg.ROBOFLY_SHOW)
           .appendField(new Blockly.FieldDropdown([
 	      ["上昇","take_off"],
 	      ["下降","landing"]
