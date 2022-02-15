@@ -1,8 +1,4 @@
 <category id="Drone" name="無人機積木" colour="345">
-<!--     <block type="drone_command_method">
-      <field name="BTE" id="BTE">藍芽</field>
-      <field name="samplingInterval" id="samplingInterval">250ms</field>
-    </block> -->
     <block type="webserial_get_serialport"></block>
     <block type="webserial_serialport"></block>
     <block type="robofly_unlock_command"></block>
