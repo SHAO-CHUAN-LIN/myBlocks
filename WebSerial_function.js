@@ -14,8 +14,8 @@ let port = null;
 serial_buttonRequest.addEventListener('click', async () => {startSerial();});
 async function startSerial() {
 	const filters = [];
-	const port = await navigator.serial.requestPort({ filters });
-	const { usbProductId, usbVendorId } = port.getInfo();
+// 	const port = await navigator.serial.requestPort({ filters });
+// 	const { usbProductId, usbVendorId } = port.getInfo();
 	
     try{
         console.log("INFO: Start to connect...");
@@ -29,16 +29,16 @@ async function startSerial() {
 }
 
 
-// serial_buttonClose.addEventListener('click', async () => {closeSerial();});
-// async function closeSerial(){
-// 	try{
-// 		port.close();
-// 		port = null;
-// 	}
-// 	catch(error){
-// 		console.log(error);
-// 	}
-// }
+serial_buttonClose.addEventListener('click', async () => {closeSerial();});
+async function closeSerial(){
+	try{
+		port.close();
+		port = null;
+	}
+	catch(error){
+		console.log(error);
+	}
+}
 
 
 
