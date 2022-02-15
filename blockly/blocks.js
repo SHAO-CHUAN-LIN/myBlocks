@@ -64,10 +64,10 @@ Blockly.Blocks['magic_command'] = {
   }
 };
 
-Blockly.Blocks['drone_take_off'] = {
+Blockly.Blocks['magic_dispel'] = {
    init: function() {
     this.appendDummyInput()
-        .appendField(Blockly.Msg.ROBOFLY_SHOW + "無人機起飛");
+        .appendField("回來吧，無人機");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
