@@ -1,7 +1,8 @@
-Blockly.Msg.WEBSERIAL_SELECT_COMPORT = "Web Serial 取得序列埠訊息 ";
-Blockly.Msg.WEBSERIAL_SELECT_PORT = "Web Serial 取得序列埠 ";
-Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW = "選擇序列埠";
-Blockly.Msg.WEBSERIAL_BUTTON_CLOSE_SHOW = "關閉序列埠";
+Blockly.Msg.WEBSERIAL_SELECT_COMPORT = "Web Serial 序列埠狀態";
+Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW = "開啟";
+Blockly.Msg.WEBSERIAL_BUTTON_CLOSE_SHOW = "關閉";
+Blockly.Msg.WEBSERIAL_OPEN = "開啟序列埠";
+Blockly.Msg.WEBSERIAL_CLOSE = "關閉序列埠";
 Blockly.Msg.ROBOFLY_SHOW = "ROBOFLY";
 Blockly.Msg.WEBSERIAL_UNLOCK_SHOW = "無人機解鎖";
 Blockly.Msg.WEBSERIAL_LOCK_SHOW = "無人機上鎖";
