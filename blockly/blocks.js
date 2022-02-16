@@ -52,30 +52,6 @@ Blockly.Blocks['robofly_unlock_command'] = {
   }
 };
 
-Blockly.Blocks['magic_command'] = {
-   init: function() {
-    this.appendDummyInput()
-        .appendField("重生吧！無人機、我還你原形！解除、解開束縛！霹靂卡霹靂拉拉波波力那貝貝魯多！！");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(230);
- this.setTooltip("");
- this.setHelpUrl("");
-  }
-};
-
-Blockly.Blocks['magic_dispel'] = {
-   init: function() {
-    this.appendDummyInput()
-        .appendField("回來吧，無人機。");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(230);
- this.setTooltip("");
- this.setHelpUrl("");
-  }
-};
-
 Blockly.Blocks['drone_up_and_down'] = {
     init: function() {
       this.appendDummyInput()
