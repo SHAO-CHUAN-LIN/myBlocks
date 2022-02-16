@@ -17,7 +17,7 @@ Blockly.JavaScript['webserial_open'] = function(block) {
 };
 
 Blockly.JavaScript['webserial_close'] = function(block) {
-  var code = 'webserial_port("close");\n';
+    var code = 'webserial_port("close");\n';
   return code;
 };
 
