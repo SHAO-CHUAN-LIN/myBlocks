@@ -1,7 +1,6 @@
-Blockly.Msg.WEBSERIAL_SELECT_COMPORT = "Get Web Serial information";
-Blockly.Msg.WEBSERIAL_SELECT_PORT = "Get Web Serial port";
-Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW = "Select port";
-Blockly.Msg.WEBSERIAL_BUTTON_CLOSE_SHOW = "Close port";
+Blockly.Msg.WEBSERIAL_SELECT_COMPORT = "Web Serial Status";
+Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW = "Open";
+Blockly.Msg.WEBSERIAL_BUTTON_CLOSE_SHOW = "Close";
 Blockly.Msg.WEBSERIAL_OPEN = "Web Serial Port Open";
 Blockly.Msg.WEBSERIAL_CLOSE = "Web Serial Port Close";
 Blockly.Msg.ROBOFLY_SHOW = "ROBOFLY";
