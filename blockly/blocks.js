@@ -7,7 +7,7 @@ Blockly.Blocks['webserial_get_serialport'] = {
 		[Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW,"button_webserial_open"],
 	    	[Blockly.Msg.WEBSERIAL_BUTTON_CLOSE_SHOW,"button_webserial_close"]
   	]), "status_");
-    this.appendDummyInput()  
+    this.appendDummyInput()
 	.appendField(Blockly.Msg.WEBSERIAL_SHOW_SHOW)	  
         .appendField(new Blockly.FieldDropdown([
 		["Y","block"],
@@ -23,7 +23,7 @@ Blockly.Blocks['webserial_get_serialport'] = {
 Blockly.Blocks['webserial_serialport'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(Blockly.Msg.WEBSERIAL_SELECT_PORT);	  
+        .appendField(Blockly.Msg.WEBSERIAL_SELECT_COMPORT);	  
     this.appendDummyInput()
         .appendField(new Blockly.FieldDropdown([
 		[Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW,"open"],
@@ -33,6 +33,30 @@ Blockly.Blocks['webserial_serialport'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(195);
+  }
+};
+
+Blockly.Blocks['webserial_open'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(Blockly.Msg.WEBSERIAL_OPEN);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(100);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['webserial_close'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(Blockly.Msg.WEBSERIAL_CLOSE);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(100);
+ this.setTooltip("");
+ this.setHelpUrl("");
   }
 };
 
