@@ -1,6 +1,8 @@
 <category id="Drone" name="無人機積木" colour="345">
     <block type="webserial_get_serialport"></block>
     <block type="webserial_serialport"></block>
+    <block type="webserial_open"></block>
+    <block type="webserial_close"></block>
     <block type="robofly_unlock_command"></block>
     <block type="drone_up_and_down"></block>
     <block type="drone_turn_left"></block>
