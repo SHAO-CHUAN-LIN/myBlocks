@@ -7,7 +7,7 @@ Blockly.JavaScript['webserial_get_serialport'] = function(block) {
 
 Blockly.JavaScript['webserial_serialport'] = function(block) {
   var value_status = block.getFieldValue('status');   
-  var code = 'webserial_port("'+value_status+'");\n';
+  var code = 'webserial_port("'+value_status+'");\n' + 'document.getElementById("demo-area-01-show").innerHTML = "等待連線...";\n';
   return code;
 };
 
