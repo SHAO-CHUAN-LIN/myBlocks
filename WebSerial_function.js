@@ -9,11 +9,11 @@ let serial_buttonClose = document.getElementById('button_webserial_close');
 let port = null;
 
 
-navigator.serial.addEventListener("connect", (event) => {
+navigator.serial.addEventListener("connect", () => {
 	console.log("連線成功");
 });
 
-navigator.serial.addEventListener("disconnect", (event) => {
+navigator.serial.addEventListener("disconnect", () => {
 	console.log("斷開連線");
 });
 
