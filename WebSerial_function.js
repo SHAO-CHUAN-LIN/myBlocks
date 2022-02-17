@@ -9,6 +9,15 @@ let serial_buttonClose = document.getElementById('button_webserial_close');
 let port = null;
 
 
+navigator.serial.addEventListener("connect", (event) => {
+	console.log("連線成功");
+});
+
+navigator.serial.addEventListener("disconnect", (event) => {
+	console.log("斷開連線");
+});
+
+
 serial_buttonRequest.addEventListener('click', async () => {startSerial();});
 async function startSerial() {
 	const filters = [];
