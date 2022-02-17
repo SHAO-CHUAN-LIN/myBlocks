@@ -33,7 +33,7 @@ async function startSerial() {
 	    await port.open({ baudRate: 115200 });
 	    port_info = await navigator.serial.getPorts();
 	    console.log(port_info);
-	    if(port_info == true){
+	    if(port_info){
 		    console.log("連線成功");
 	    }
     }
