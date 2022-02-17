@@ -27,10 +27,10 @@ async function startSerial() {
     try{
 	    console.log("INFO: Start to connect...");
 	    port = await navigator.serial.requestPort();
-	    await port.open({ baudRate: 115200 }); //wait baudrate data,or jump to catch
-	    await navigator.serial.addEventListener("connect", (event) => {
-		    console.log("連線成功");
-	    });
+	    await port.open({ baudRate: 115200 });
+// 	    await navigator.serial.addEventListener("connect", (event) => {
+// 		    console.log("連線成功");
+// 	    });
     }
     catch(error){
 	    console.log("ERRORR:Port is not open");
