@@ -34,6 +34,9 @@ async function startSerial() {
 	    if(port_info){
 		    console.log("連線成功");
 	    }
+	    else{
+		    console.log("連線失敗");
+	    }
 // 	    await navigator.serial.addEventListener("connect", (event) => {
 // 		    console.log("連線成功");
 	    
