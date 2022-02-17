@@ -1,12 +1,10 @@
 document.write('<input type="button" id="button_webserial_open" style="display:none;z-index:999" value="選擇序列埠">');
 document.write('<input type="button" id="button_webserial_close" style="display:none;z-index:999" value="關閉序列埠">');
-// document.write('<input type="text" id="serial_uint8" style="position:absolute;display:none;z-index:999">');
-// document.write('<button id="serial_sendUint8" style="position:absolute;display:none;z-index:999">Send Uint8Array</button>');
+document.write('<input type="text" id="serial_text" style="position:absolute;display:none;z-index:999" value="連線狀態">');
 
 let serial_buttonRequest = document.getElementById('button_webserial_open');
 let serial_buttonClose = document.getElementById('button_webserial_close');
-// let serial_uint8 = document.getElementById('serial_uint8');
-// let serial_send_data = document.getElementById('serial_sendUint8');
+let serial_text = document.getElementById('serial_text');
 
 let port = null;
 
@@ -18,13 +16,14 @@ async function startSerial() {
 // 	const { usbProductId, usbVendorId } = port.getInfo();
 	
     try{
-        console.log("INFO: Start to connect...");
-        port = await navigator.serial.requestPort();
-        await port.open({ baudRate: 115200 }); //wait baudrate data,or jump to catch
+	    console.log("INFO: Start to connect...");
+	    port = await navigator.serial.requestPort();
+	    await port.open({ baudRate: 115200 }); //wait baudrate data,or jump to catch
+	    serial_text.textContent="New Text";
     }
     catch(error){
-        console.log("ERRORR:Port is not open");
-        console.log(error); //DOMException: Failed to open serial port.
+	    console.log("ERRORR:Port is not open");
+	    console.log(error); //DOMException: Failed to open serial port.
     }
 }
 
