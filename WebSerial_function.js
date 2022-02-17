@@ -35,7 +35,7 @@ async function startSerial() {
 	    console.log(port_info);
 	    if(port_info){
 		    console.log("連線成功");
-		    document.getElementById('button_webserial_open').style.display = "";
+		    document.getElementById('button_webserial_open').style.display = "none";
 	    }
     }
     catch(error){
