@@ -1,6 +1,6 @@
 document.write('<input type="button" id="button_webserial_open" style="display:none;z-index:999" value="選擇序列埠">');
 document.write('<input type="button" id="button_webserial_close" style="display:none;z-index:999" value="關閉序列埠">');
-document.write('<input type="textarea" id="serial_text" style="position:absolute;z-index:999" value="等待連線">');
+document.write('<input type="textarea" id="serial_text" style="position:absolute;z-index:999">');
 
 let serial_buttonRequest = document.getElementById('button_webserial_open');
 let serial_buttonClose = document.getElementById('button_webserial_close');
