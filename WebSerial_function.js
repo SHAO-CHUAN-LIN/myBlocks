@@ -37,10 +37,6 @@ async function startSerial() {
 	    else{
 		    console.log("連線失敗");
 	    }
-// 	    await navigator.serial.addEventListener("connect", (event) => {
-// 		    console.log("連線成功");
-	    
-// 	    });
     }
     catch(error){
 	    console.log("ERRORR:Port is not open");
