@@ -11,7 +11,7 @@ let port_info = null;
 
 
 navigator.serial.addEventListener("connect", () => {
-	console.log("連線成功");
+	serial_message("Device connect");
 });
 
 navigator.serial.addEventListener("disconnect", () => {
