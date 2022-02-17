@@ -29,7 +29,7 @@ async function startSerial() {
 	    port = await navigator.serial.requestPort();
 	    await port.open({ baudRate: 115200 });
 // 	    await navigator.serial.addEventListener("connect", (event) => {
-// 		    console.log("連線成功");
+		    console.log("連線成功");
 // 	    });
     }
     catch(error){
