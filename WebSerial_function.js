@@ -7,6 +7,7 @@ let serial_buttonClose = document.getElementById('button_webserial_close');
 
 
 let port = null;
+let port_info = null;
 
 
 navigator.serial.addEventListener("connect", () => {
@@ -28,8 +29,11 @@ async function startSerial() {
 	    console.log("INFO: Start to connect...");
 	    port = await navigator.serial.requestPort();
 	    await port.open({ baudRate: 115200 });
-	    const port_info = await navigator.serial.getPorts();
+	    port_info = await navigator.serial.getPorts();
 	    console.log(port_info);
+	    if(port_info){
+		    console.log("連線成功");
+	    }
 // 	    await navigator.serial.addEventListener("connect", (event) => {
 // 		    console.log("連線成功");
 	    
