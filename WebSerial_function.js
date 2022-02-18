@@ -5,7 +5,7 @@ document.write('<span id="serial_status" style="position:absolute;display:none" 
 
 let serial_buttonRequest = document.getElementById('button_webserial_open');
 let serial_buttonClose = document.getElementById('button_webserial_close');
-let serial_status = document.getElementById('serial_status');
+let serial_text = document.getElementById('serial_text');
 
 
 let port = null;
@@ -37,6 +37,7 @@ async function startSerial() {
 		    console.log("連線成功");
 		    document.getElementById('button_webserial_open').style.display = "none";
 		    document.getElementById("demo-area-01-show").innerHTML = "連線成功！";
+		    document.serial_text.innerHTML = "連線成功！";
 	    }
     }
     catch(error){
