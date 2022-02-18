@@ -1,7 +1,7 @@
 document.write('<input type="button" id="button_webserial_open" style="display:none;z-index:999" value="選擇序列埠">');
 document.write('<input type="button" id="button_webserial_close" style="display:none;z-index:999" value="關閉序列埠">');
 document.write('<input type="textarea" id="serial_text" style="position:absolute;width=100%;z-index:999" rows="100" cols="33" value="test">');
-document.write('<span id="serial_status" style="position:absolute;display:none" style="position:absolute;z-index:999"></span>');
+document.write('<span id="serial_status" style="position:absolute;" style="position:absolute;z-index:999"></span>');
 
 let serial_buttonRequest = document.getElementById('button_webserial_open');
 let serial_buttonClose = document.getElementById('button_webserial_close');
