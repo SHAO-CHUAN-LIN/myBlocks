@@ -74,7 +74,7 @@ Blockly.Blocks['robofly_unlock_command'] = {
         .appendField("等待時間");  
     this.setInputsInline(true);	 	  
     this.setPreviousStatement(true);
-    this.setNextStatement(true, null); 
+    this.setNextStatement(true); 
     this.setColour(230);
   }
 };
