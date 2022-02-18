@@ -42,7 +42,7 @@ Blockly.Blocks['webserial_open'] = {
         .appendField(Blockly.Msg.WEBSERIAL_OPEN);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(100);
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -54,7 +54,7 @@ Blockly.Blocks['webserial_close'] = {
         .appendField(Blockly.Msg.WEBSERIAL_CLOSE);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(100);
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -125,7 +125,7 @@ Blockly.Blocks['drone_go_straight'] = {
         .appendField("無人機前進");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(330);
+    this.setColour(100);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -137,7 +137,7 @@ Blockly.Blocks['drone_go_back'] = {
         .appendField("無人機後退");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(330);
+    this.setColour(100);
  this.setTooltip("");
  this.setHelpUrl("");
   }
