@@ -75,7 +75,7 @@ Blockly.Blocks['robofly_unlock_command'] = {
     this.setInputsInline(true);	 	  
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null); 
-    this.setColour(230);
+    this.setColour(330);
   }
 };
 
