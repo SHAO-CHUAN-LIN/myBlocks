@@ -3,7 +3,13 @@
     <block type="webserial_serialport"></block>
     <block type="webserial_open"></block>
     <block type="webserial_close"></block>
-    <block type="robofly_unlock_command"></block>
+    <block type="robofly_unlock_command">
+        <value name="delay_time">
+            <block type="math_number">
+                <field name="NUM">0</field>
+            </block>
+        </value>
+    </block>
     <block type="drone_up_and_down"></block>
     <block type="drone_turn_left"></block>
     <block type="drone_turn_right"></block>
