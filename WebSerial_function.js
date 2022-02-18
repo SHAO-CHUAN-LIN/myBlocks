@@ -50,13 +50,11 @@ async function closeSerial(){
 	try{
 		port.close();
 		port = null;
-		port_info = await navigator.serial.getPorts();
-		if(!port_info){
-			console.log("斷開連線");
-			document.getElementById('button_webserial_close').style.display = "none";
-			document.getElementById('demo-area-01-show').innerHTML = "選擇連線";
-			document.getElementById('serial_text').value = "選擇連線";
-		}
+		console.log("斷開連線");
+		document.getElementById('button_webserial_close').style.display = "none";
+		document.getElementById('demo-area-01-show').innerHTML = "選擇連線";
+		document.getElementById('serial_text').value = "選擇連線";
+
 	}
 	catch(error){
 		console.log(error);
