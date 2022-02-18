@@ -75,7 +75,7 @@ Blockly.Blocks['robofly_unlock_command'] = {
     this.setInputsInline(true);	 	  
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null); 
-    this.setColour(330);
+    this.setColour(100);
   }
 };
 
@@ -125,7 +125,7 @@ Blockly.Blocks['drone_go_straight'] = {
         .appendField("無人機前進");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(100);
+    this.setColour(330);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -137,7 +137,7 @@ Blockly.Blocks['drone_go_back'] = {
         .appendField("無人機後退");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(100);
+    this.setColour(330);
  this.setTooltip("");
  this.setHelpUrl("");
   }
