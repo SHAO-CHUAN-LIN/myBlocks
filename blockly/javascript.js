@@ -12,13 +12,15 @@ Blockly.JavaScript['webserial_serialport'] = function(block) {
 };
 
 Blockly.JavaScript['webserial_open'] = function(block) {
-    var code = 'webserial_port("open");\n' + 'document.getElementById("demo-area-01-show").innerHTML = "等待連線...";\n';
+    var code = 'webserial_port("open");\n' + 'document.getElementById("demo-area-01-show").innerHTML = "等待連線...";\n''+
+               'delay(10);\n';
 //     var code = 'webserial_port("open");\n';
   return code;
 };
 
 Blockly.JavaScript['webserial_close'] = function(block) {
-    var code = 'webserial_port("close");\n';
+    var code = 'webserial_port("close");\n''+
+               'delay(10);\n';
   return code;
 };
 
@@ -30,7 +32,7 @@ Blockly.JavaScript['robofly_unlock_command'] = function(block) {
                'await delay('+ value_time +');\n';
   else if(value_lock_status == "lock")
     var code = 'send_data("0x24,0x4d,0x3c,0x10,0xc8,0xdc,0x05,0xdc,0x05,0xe8,0x03,0xe8,0x03,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xd8");\n'+
-               'await delay('+ value_time +');\n';
+               'delay('+ value_time +');\n';
 //   var code = "robotfly_status('"+ value_lock_status +"')";
 //   return [code, Blockly.JavaScript.ORDER_NONE];
   return code;
