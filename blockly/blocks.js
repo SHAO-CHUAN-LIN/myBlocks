@@ -60,6 +60,16 @@ Blockly.Blocks['webserial_close'] = {
   }
 };
 
+Blockly.Blocks['webserial_status'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(Blockly.Msg.WEBSERIAL_GETSTATE_SHOW);
+    this.setInputsInline(true);	 	  
+    this.setOutput(true, null);  
+    this.setColour(300);
+  }  
+};
+
 Blockly.Blocks['robofly_unlock_command'] = {
   init: function() {
     this.appendDummyInput()
