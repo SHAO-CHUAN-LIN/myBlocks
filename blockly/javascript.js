@@ -12,15 +12,13 @@ Blockly.JavaScript['webserial_serialport'] = function(block) {
 };
 
 Blockly.JavaScript['webserial_open'] = function(block) {
-    var code = 'webserial_port("open");\n' + 'document.getElementById("demo-area-01-show").innerHTML = "等待連線...";\n'+
-               'await delay(10);\n';
+    var code = 'webserial_port("open");\n' + 'document.getElementById("demo-area-01-show").innerHTML = "等待連線...";\n';
 //     var code = 'webserial_port("open");\n';
   return code;
 };
 
 Blockly.JavaScript['webserial_close'] = function(block) {
-    var code = 'webserial_port("close");\n'+
-               'await delay(10);\n';
+    var code = 'webserial_port("close");\n';
   return code;
 };
 
@@ -40,10 +38,13 @@ Blockly.JavaScript['robofly_unlock_command'] = function(block) {
 
 Blockly.JavaScript['drone_up_and_down'] = function(block) {
   var value_status = block.getFieldValue('status_');
+  var value_time = Blockly.JavaScript.valueToCode(block, 'delay_time', Blockly.JavaScript.ORDER_ATOMIC);
   if(value_status == "take_off")
-    var code = 'send_data("0x24,0x4d,0x3c,0x10,0xc8,0xdc,0x05,0xdc,0x05,0xdc,0x05,0x14,0x05,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xdc,0x05,0x10");\n'; //1300
+    var code = 'send_data("0x24,0x4d,0x3c,0x10,0xc8,0xdc,0x05,0xdc,0x05,0xdc,0x05,0x14,0x05,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xdc,0x05,0x10");\n'+ //1300
+               'await delay('+ value_time +');\n';
   else if(value_status == "landing")
-    var code = 'send_data("0x24,0x4d,0x3c,0x10,0xc8,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xe8,0x03,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xea");\n'; //1000
+    var code = 'send_data("0x24,0x4d,0x3c,0x10,0xc8,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xe8,0x03,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xdc,0x05,0xea");\n'+ //1000
+               'await delay('+ value_time +');\n';
 //   var code = "robotfly_status('"+ value_lock_status +"')";
 //   return [code, Blockly.JavaScript.ORDER_NONE];
   return code;
