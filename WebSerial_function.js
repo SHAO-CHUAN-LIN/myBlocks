@@ -4,7 +4,6 @@ document.write('<input type="textarea" id="serial_text" style="display:none;posi
 
 let serial_buttonRequest = document.getElementById('button_webserial_open');
 let serial_buttonClose = document.getElementById('button_webserial_close');
-let serial_text = document.getElementById('serial_text').value;
 
 
 let port = null;
