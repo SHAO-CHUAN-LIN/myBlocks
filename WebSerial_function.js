@@ -37,7 +37,7 @@ async function startSerial() {
 		    console.log("連線成功");
 		    document.getElementById('button_webserial_open').style.display = "none";
 		    document.getElementById('demo-area-01-show').innerHTML = "連線成功！";
-		    document.getElementById('serial_text').innerHTML = "連線成功！";
+		    document.getElementById('serial_text').value = "連線成功！";
 	    }
     }
     catch(error){
