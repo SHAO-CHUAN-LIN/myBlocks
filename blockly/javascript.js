@@ -23,7 +23,7 @@ Blockly.JavaScript['webserial_close'] = function(block) {
 };
 
 Blockly.JavaScript['webserial_status'] = function(block) {
-    var code = '...;\n';
+    var code = 'webserial_status();\n';
   return code;
 };
 
