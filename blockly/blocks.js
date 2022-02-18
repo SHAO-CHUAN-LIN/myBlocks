@@ -66,8 +66,8 @@ Blockly.Blocks['robofly_unlock_command'] = {
         .appendField(Blockly.Msg.ROBOFLY_SHOW);	  
     this.appendDummyInput()
         .appendField(new Blockly.FieldDropdown([
-		[Blockly.Msg.WEBSERIAL_UNLOCK_SHOW,"unlock"],
- 		[Blockly.Msg.WEBSERIAL_LOCK_SHOW,"lock"]
+		[Blockly.Msg.ROBOFLY_UNLOCK_SHOW,"unlock"],
+ 		[Blockly.Msg.ROBOFLY_LOCK_SHOW,"lock"]
   	]), "lock_status");
     this.appendValueInput("delay_time")
         .setCheck("Number")
