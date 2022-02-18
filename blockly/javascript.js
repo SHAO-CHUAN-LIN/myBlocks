@@ -22,6 +22,11 @@ Blockly.JavaScript['webserial_close'] = function(block) {
   return code;
 };
 
+Blockly.JavaScript['webserial_status'] = function(block) {
+    var code = '...;\n';
+  return code;
+};
+
 Blockly.JavaScript['robofly_unlock_command'] = function(block) {
   var value_lock_status = block.getFieldValue('lock_status');
   var value_time = Blockly.JavaScript.valueToCode(block, 'delay_time', Blockly.JavaScript.ORDER_ATOMIC);
