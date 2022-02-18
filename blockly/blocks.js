@@ -87,6 +87,11 @@ Blockly.Blocks['drone_up_and_down'] = {
 	      ["上昇","take_off"],
 	      ["下降","landing"]
       ]), "status_");
+      this.appendValueInput("delay_time")
+        .setCheck("Number")
+        .appendField("等待時間");
+      this.appendDummyInput()
+          .appendField("秒")
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
       this.setColour(20);
