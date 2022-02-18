@@ -86,8 +86,8 @@ Blockly.Blocks['drone_up_and_down'] = {
       this.appendDummyInput()
           .appendField(Blockly.Msg.ROBOFLY_SHOW)
           .appendField(new Blockly.FieldDropdown([
-	      ["上昇","take_off"],
-	      ["下降","landing"]
+	      [Blockly.Msg.ROBOFLY_TAKE_OFF,"take_off"],
+	      [Blockly.Msg.ROBOFLY_LANDING,"landing"]
       ]), "status_");
       this.appendValueInput("delay_time")
         .setCheck("Number")
