@@ -1,11 +1,10 @@
 document.write('<input type="button" id="button_webserial_open" style="display:none;z-index:999" value="選擇序列埠">');
 document.write('<input type="button" id="button_webserial_close" style="display:none;z-index:999" value="關閉序列埠">');
 document.write('<input type="textarea" id="serial_text" style="position:absolute;width=100%;z-index:999" rows="100" cols="33" value="test">');
-document.write('<span id="serial_status" style="position:absolute;" style="position:absolute;z-index:999"></span>');
 
 let serial_buttonRequest = document.getElementById('button_webserial_open');
 let serial_buttonClose = document.getElementById('button_webserial_close');
-let serial_text = document.getElementById('serial_text');
+let serial_text = document.getElementById('serial_text').value;
 
 
 let port = null;
@@ -35,9 +34,9 @@ async function startSerial() {
 	    console.log(port_info);
 	    if(port_info){
 		    console.log("連線成功");
-		    document.getElementById('button_webserial_open').style.display = "none";
+		    document.serial_buttonRequest.style.display = "none";
 		    document.getElementById('demo-area-01-show').innerHTML = "連線成功！";
-		    document.getElementById('serial_text').value = "連線成功！";
+		    document.serial_text = "連線成功！";
 	    }
     }
     catch(error){
