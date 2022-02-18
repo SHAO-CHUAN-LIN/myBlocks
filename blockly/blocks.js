@@ -69,9 +69,9 @@ Blockly.Blocks['robofly_unlock_command'] = {
 		[Blockly.Msg.WEBSERIAL_UNLOCK_SHOW,"unlock"],
  		[Blockly.Msg.WEBSERIAL_LOCK_SHOW,"lock"]
   	]), "lock_status");
-  this.appendValueInput("delay_time")
-      .setCheck("Number")
-      .appendField("等待時間");  
+    this.appendValueInput("delay_time")
+        .setCheck("Number")
+        .appendField("等待時間");  
     this.setInputsInline(true);	 	  
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null); 
