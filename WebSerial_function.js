@@ -44,13 +44,6 @@ async function startSerial() {
     }
 }
 
-function webserial_status(){
-	port_info = await navigator.serial.getPorts();
-// 	if(port_info){
-// 		return 1;
-// 	}
-}
-
 
 serial_buttonClose.addEventListener('click', async () => {closeSerial();});
 async function closeSerial(){
