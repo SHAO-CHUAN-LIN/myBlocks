@@ -1,6 +1,6 @@
 document.write('<input type="button" id="button_webserial_open" style="display:none;z-index:999" value="選擇序列埠">');
 document.write('<input type="button" id="button_webserial_close" style="display:none;z-index:999" value="關閉序列埠">');
-document.write('<input type="textarea" id="serial_text" style="position:absolute;width=100%;z-index:999" rows="100" cols="33" value="test">');
+document.write('<input type="textarea" id="serial_text" style="position:absolute;width=100%;z-index:999" rows="100" cols="33" value="選擇連線">');
 
 let serial_buttonRequest = document.getElementById('button_webserial_open');
 let serial_buttonClose = document.getElementById('button_webserial_close');
@@ -30,6 +30,7 @@ async function startSerial() {
 	    console.log("INFO: Start to connect...");
 	    port = await navigator.serial.requestPort();
 	    await port.open({ baudRate: 115200 });
+	    document.serial_text = "連線中...";
 	    port_info = await navigator.serial.getPorts();
 	    console.log(port_info);
 	    if(port_info){
