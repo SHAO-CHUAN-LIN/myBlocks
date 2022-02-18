@@ -17,12 +17,7 @@
 // 		  else
 // 			  return "";
 	}
-  function webserial_status(){
-	  port_info = await navigator.serial.getPorts();
-// 	  if(port_info){
-// 		  return 1;
-// 	  }
-	}
+
 	
 	window.webserial_get_port = webserial_get_port;
 	window.webserial_port = webserial_port;
