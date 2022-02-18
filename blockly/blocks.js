@@ -71,7 +71,9 @@ Blockly.Blocks['robofly_unlock_command'] = {
   	]), "lock_status");
     this.appendValueInput("delay_time")
         .setCheck("Number")
-        .appendField("等待時間");  
+        .appendField("等待時間");
+    this.appendDummyInput()
+          .appendField("秒")
     this.setInputsInline(true);	 	  
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null); 
@@ -89,7 +91,7 @@ Blockly.Blocks['drone_up_and_down'] = {
       ]), "status_");
       this.appendValueInput("delay_time")
         .setCheck("Number")
-        .appendField("等待時間");
+        .appendField("等待");
       this.appendDummyInput()
           .appendField("秒")
       this.setPreviousStatement(true, null);
