@@ -15,7 +15,7 @@ navigator.serial.addEventListener("connect", () => {
 });
 
 navigator.serial.addEventListener("disconnect", () => {
-	console.log("斷開連線");
+	console.log("Device disconnect");
 });
 
 
