@@ -12,10 +12,10 @@ Blockly.JavaScript['webserial_serialport'] = function(block) {
 };
 
 Blockly.JavaScript['webserial_open'] = function(block) {
-   var FFFF = document.getElementById('demo-select').style.display = "none";
+   var hidden_dropdown = document.getElementById('demo-select').style.display = "none";
 //     var code = 'webserial_port("open");\n' + 'document.getElementById("demo-select");\n'
     
-    var code = 'webserial_port("open");\n' + FFFF + ';\n';
+    var code = 'webserial_port("open");\n'+'document.getElementById("demo-area-01-show").innerHTML = "等待連線...";\n'+ hidden_dropdown +';\n';
   return code;
 };
 
