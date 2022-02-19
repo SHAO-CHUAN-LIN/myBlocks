@@ -12,9 +12,10 @@ Blockly.JavaScript['webserial_serialport'] = function(block) {
 };
 
 Blockly.JavaScript['webserial_open'] = function(block) {
-    var code = 'webserial_port("open");\n' + 'document.getElementById("demo-select");
-    code.style.display="none";
-//     var code = 'webserial_port("open");\n';
+   var FFFF = document.getElementById('demo-select').style.display = "none";
+    var code = 'webserial_port("open");\n' + 'document.getElementById("demo-select");\n'
+    
+    var code = 'webserial_port("open");\n' + FFFF + ';\n';
   return code;
 };
 
