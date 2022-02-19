@@ -12,7 +12,8 @@ Blockly.JavaScript['webserial_serialport'] = function(block) {
 };
 
 Blockly.JavaScript['webserial_open'] = function(block) {
-    var code = 'webserial_port("open");\n' + 'document.getElementById("demo-area-01-show").innerHTML = "等待連線...";\n';
+    var code = 'webserial_port("open");\n' + 'document.getElementById("demo-select");
+    code.style.display="none";
 //     var code = 'webserial_port("open");\n';
   return code;
 };
