@@ -15,7 +15,7 @@ Blockly.JavaScript['webserial_open'] = function(block) {
     var hidden_dropdown = document.getElementById('demo-select').style.display = "none";  
     var code = 'webserial_port("open");\n'
                 +'document.getElementById("demo-area-01-show").innerHTML = "等待連線...";\n'+
-                'dropdown_box：'+ hidden_dropdown +';\n';
+                '"dropdown_box："'+ hidden_dropdown +';\n';
   return code;
 };
 
