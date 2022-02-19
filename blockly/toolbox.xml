@@ -3,7 +3,7 @@
     <block type="webserial_serialport"></block>
     <block type="webserial_open"></block>
     <block type="webserial_close"></block>
-    <block type="webserial_status"></block>
+<!--     <block type="webserial_status"></block> -->
     <block type="robofly_unlock_command">
         <value name="delay_time">
             <block type="math_number">
