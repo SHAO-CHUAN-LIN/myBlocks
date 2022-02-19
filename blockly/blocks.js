@@ -101,7 +101,7 @@ Blockly.Blocks['drone_up_and_down'] = {
       ]), "status_");
       this.appendValueInput("delay_time")
         .setCheck("Number")
-        .appendField("持續");
+        .appendField("持續飛行");
       this.appendDummyInput()
           .appendField("秒")
       this.setPreviousStatement(true, null);
