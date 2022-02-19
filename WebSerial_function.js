@@ -62,7 +62,7 @@ async function closeSerial(){
 }
 
 
- async function webserial_status(){
+async function webserial_status(){
 	 port_info = await navigator.serial.getPorts();
 // 	 if(port_info){
 // 		 return 1;
