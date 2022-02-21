@@ -66,8 +66,10 @@ async function closeSerial(){
 
 
 async function webserial_status(){
+	const serial_text = document.getElementById('serial_text').value;
 // 	var port_info = SerialPortInfo getInfo();
 // 	return port_info;
+	return serial_text;
 }
 
 // serial_send_data.addEventListener('click', async () => {send_data();});
