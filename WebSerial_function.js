@@ -31,7 +31,7 @@ async function startSerial() {
 	    port = await navigator.serial.requestPort();
 	    await port.open({ baudRate: 115200 });
 	    port_info = await navigator.serial.getPorts();
-	    info = serial.getInfo();
+	    info = port.getInfo();
 	    console.log(port_info);
 	    console.log(info);
 	    if(port_info){
