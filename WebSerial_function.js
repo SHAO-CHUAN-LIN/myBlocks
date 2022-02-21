@@ -5,7 +5,7 @@ document.write('<input type="textarea" id="serial_text" style="display:none;posi
 let serial_buttonRequest = document.getElementById('button_webserial_open');
 let serial_buttonClose = document.getElementById('button_webserial_close');
 
-
+var global_v = "0";
 let port = null;
 let port_info = null;
 let info = null;
@@ -39,6 +39,7 @@ async function startSerial() {
 		    document.getElementById('button_webserial_open').style.display = "none";
 		    document.getElementById('demo-area-01-show').innerHTML = "連線成功！";
 		    document.getElementById('serial_text').value = "open";
+		    global_v = "1";
 	    }
     }
     catch(error){
@@ -67,11 +68,11 @@ async function closeSerial(){
 
 async function webserial_status(){
 // 	var serial_text = (document.getElementById('serial_text').value).toString();
-	var serial_text = document.getElementById('serial_text').value;
-	var serial_text = serial_text.toString();
-	console.log(typeof serial_text);
-	console.log(serial_text);
-	return serial_text;
+// 	var serial_text = document.getElementById('serial_text').value;
+// 	var serial_text = serial_text.toString();
+// 	console.log(typeof serial_text);
+// 	console.log(serial_text);
+	return global_v;
 }
 
 // serial_send_data.addEventListener('click', async () => {send_data();});
