@@ -70,6 +70,7 @@ async function webserial_status(){
 	var serial_text = document.getElementById('serial_text').value;
 	var serial_text = serial_text.toString();
 	console.log(typeof serial_text);
+	console.log(serial_text);
 	return serial_text;
 }
 
