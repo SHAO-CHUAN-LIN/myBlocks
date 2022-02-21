@@ -56,7 +56,7 @@ async function closeSerial(){
 // 		console.log("斷開連線");
 		document.getElementById('button_webserial_close').style.display = "none";
 		document.getElementById('demo-area-01-show').innerHTML = "等待連線...";
-		document.getElementById('serial_text').value = "等待連線...";
+		document.getElementById('serial_text').value = "open";
 
 	}
 	catch(error){
