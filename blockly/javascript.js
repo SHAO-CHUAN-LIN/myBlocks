@@ -26,8 +26,8 @@ Blockly.JavaScript['webserial_close'] = function(block) {
 
 Blockly.JavaScript['webserial_status'] = function(block) {
   //  var code = 'JSON.stringify(webserial_status())';
-  var test = 'test = {"name":"John", "birth":"1986-12-14", "city":"New York"};\n';
-  var obj = 'obj = JSON.parse(test);\n';
+  var test = 'var test = {"name":"John", "birth":"1986-12-14", "city":"New York"};\n';
+  var obj = 'var obj = JSON.parse(test);\n';
   var code = test + obj +'console.log(obj.name)';
  // var code = 'console.log(JSON.stringify('+ test +'))';
 //     const myJSON = JSON.stringify(webserial_status());
