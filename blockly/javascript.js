@@ -28,10 +28,10 @@ Blockly.JavaScript['webserial_close'] = function(block) {
 };
 
 Blockly.JavaScript['webserial_status'] = function(block) {
-    var code = 'webserial_status()';
-    const myJSON = JSON.stringify(code);
+    var code = 'JSON.stringify(webserial_status())';
+//     const myJSON = JSON.stringify(webserial_status());
   
-  return [myJSON, Blockly.JavaScript.ORDER_NONE];
+  return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['robofly_unlock_command'] = function(block) {
