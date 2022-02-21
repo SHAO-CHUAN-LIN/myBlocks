@@ -28,7 +28,8 @@ Blockly.JavaScript['webserial_close'] = function(block) {
 };
 
 Blockly.JavaScript['webserial_status'] = function(block) {
-    var code = 'JSON.stringify(webserial_status())';
+  //  var code = 'JSON.stringify(webserial_status())';
+   var code = 'JSON.stringify("{"name":"John", "birth":"1986-12-14", "city":"New York"}")';
 //     const myJSON = JSON.stringify(webserial_status());
   
   return [code, Blockly.JavaScript.ORDER_NONE];
