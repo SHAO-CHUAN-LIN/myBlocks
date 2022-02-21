@@ -29,7 +29,9 @@ Blockly.JavaScript['webserial_close'] = function(block) {
 
 Blockly.JavaScript['webserial_status'] = function(block) {
     var code = 'webserial_status()';
-  return [code, Blockly.JavaScript.ORDER_NONE];
+    const myJSON = JSON.stringify(code);
+  
+  return [myJSON, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['robofly_unlock_command'] = function(block) {
