@@ -66,10 +66,10 @@ async function closeSerial(){
 
 
 async function webserial_status(){
-	var serial_text = (document.getElementById('serial_text').value).toString();
+// 	var serial_text = (document.getElementById('serial_text').value).toString();
+	var serial_text = document.getElementById('serial_text').value;
+	var serial_text = serial_text.toString();
 // 	console.log(serial_text);
-// 	var port_info = SerialPortInfo getInfo();
-// 	return port_info;
 	return serial_text;
 }
 
