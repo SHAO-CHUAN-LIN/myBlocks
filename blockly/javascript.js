@@ -28,7 +28,7 @@ Blockly.JavaScript['webserial_close'] = function(block) {
 };
 
 Blockly.JavaScript['webserial_status'] = function(block) {
-    var code = 'webserial_status().toString()';
+    var code = 'webserial_status()';
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
