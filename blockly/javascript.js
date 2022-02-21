@@ -33,7 +33,7 @@ Blockly.JavaScript['webserial_status'] = function(block) {
    var code = 'JSON.stringify('+test+')';
 //     const myJSON = JSON.stringify(webserial_status());
   
-  return [code, Blockly.JavaScript.ORDER_NONE];
+  return code;
 };
 
 Blockly.JavaScript['robofly_unlock_command'] = function(block) {
