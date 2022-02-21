@@ -1,6 +1,3 @@
-
-
-
 Blockly.JavaScript['webserial_get_serialport'] = function(block) {
   var value_status = block.getFieldValue('status_');   
   var value_select = block.getFieldValue('select_');
@@ -30,7 +27,7 @@ Blockly.JavaScript['webserial_close'] = function(block) {
 Blockly.JavaScript['webserial_status'] = function(block) {
   //  var code = 'JSON.stringify(webserial_status())';
   var test = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
-   var code = 'console.log(JSON.stringify('+test+'))';
+   var code = 'console.log(JSON.stringify('+ test +'))';
 //     const myJSON = JSON.stringify(webserial_status());
   
   return code;
