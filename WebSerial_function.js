@@ -43,6 +43,7 @@ async function startSerial() {
 	    }
     }
     catch(error){
+	    document.getElementById('demo-area-01-show').innerHTML = "連線失敗，請重新連線！";
 	    console.log("ERRORR:Port is not open");
 	    console.log(error); //DOMException: Failed to open serial port.
     }
