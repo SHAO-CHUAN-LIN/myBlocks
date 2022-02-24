@@ -110,7 +110,7 @@ Blockly.Blocks['robofly_up_and_down'] = {
    this.setTooltip("");
    this.setHelpUrl("");
     }
-  };
+};
 
 Blockly.Blocks['drone_turn_left'] = {
    init: function() {
@@ -143,8 +143,8 @@ Blockly.Blocks['robofly_go_straight'] = {
         .appendField(Blockly.Msg.ROBOFLY_SHOW);	  
     this.appendDummyInput()
         .appendField(new Blockly.FieldDropdown([
-		[Blockly.Msg.ROBOFLY_UNLOCK_SHOW,"straight"],
- 		[Blockly.Msg.ROBOFLY_LOCK_SHOW,"back"]
+		[Blockly.Msg.ROBOFLY_STRAIGHT,"straight"],
+ 		[Blockly.Msg.ROBOFLY_BACK,"back"]
   	]), "direction_status");
     this.appendValueInput("delay_time")
         .setCheck("Number")
@@ -155,17 +155,6 @@ Blockly.Blocks['robofly_go_straight'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null); 
     this.setColour(330);
-  }
-
-Blockly.Blocks['drone_go_back'] = {
-   init: function() {
-    this.appendDummyInput()
-        .appendField("無人機後退");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(330);
- this.setTooltip("");
- this.setHelpUrl("");
   }
 };
 
