@@ -1,5 +1,7 @@
 {
-  "types": ["webserial_get_serialport","webserial_serialport","webserial_open","webserial_close","webserial_status","robofly_unlock_command","robofly_up_and_down","turn_left","turn_right","robofly_go_straight","robofly_go_back","drone_land"],
+  "types": ["webserial_get_serialport","webserial_serialport","webserial_open","webserial_close","webserial_status","robofly_unlock_command","robofly_up_and_down",
+            "turn_left","turn_right","robofly_go_straight","drone_land"
+           ],
   "category": "Drone",
   "scripts": [
     "blockly/blocks.js",
