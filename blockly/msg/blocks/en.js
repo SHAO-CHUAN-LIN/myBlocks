@@ -9,3 +9,5 @@ Blockly.Msg.ROBOFLY_UNLOCK_SHOW = "drone unlock";
 Blockly.Msg.ROBOFLY_LOCK_SHOW = "drone lock";
 Blockly.Msg.ROBOFLY_TAKE_OFF = "take off";
 Blockly.Msg.ROBOFLY_LANDING = "landing";
+Blockly.Msg.ROBOFLY_STRAIGHT = "straight";
+Blockly.Msg.ROBOFLY_BACK = "back";
