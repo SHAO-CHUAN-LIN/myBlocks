@@ -136,7 +136,6 @@ Blockly.Blocks['drone_turn_right'] = {
   }
 };
 
-
 Blockly.Blocks['robofly_go_straight'] = {
   init: function() {
     this.appendDummyInput()
