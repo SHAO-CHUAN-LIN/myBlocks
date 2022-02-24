@@ -147,7 +147,7 @@ Blockly.Blocks['robofly_go_straight'] = {
   	]), "direction_status");
     this.appendValueInput("delay_time")
         .setCheck("Number")
-        .appendField("，等待");
+        .appendField("持續");
     this.appendDummyInput()
           .appendField("秒")
     this.setInputsInline(true);	 	  
