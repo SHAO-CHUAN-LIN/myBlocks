@@ -11,7 +11,7 @@
             </block>
         </value>
     </block>
-    <block type="drone_up_and_down">
+    <block type="robofly_up_and_down">
         <value name="delay_time">
             <block type="math_number">
                 <field name="NUM">0</field>
@@ -20,7 +20,7 @@
     </block>
     <block type="drone_turn_left"></block>
     <block type="drone_turn_right"></block>
-    <block type="drone_go_straight"></block>
-    <block type="drone_go_back"></block>
+    <block type="robofly_go_straight"></block>
+    <block type="robofly_go_back"></block>
     <block type="drone_land"></block>
 </category>
