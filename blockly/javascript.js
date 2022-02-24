@@ -80,12 +80,6 @@ Blockly.JavaScript['robofly_go_straight'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['robofly_go_back'] = function(block) {
-  // TODO: Assemble Arduino into code variable.
-  var code = '...;\n';
-  return code;
-};
-
 Blockly.JavaScript['drone_land'] = function(block) {
   // TODO: Assemble Arduino into code variable.
   var code = '...;\n';
