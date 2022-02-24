@@ -9,3 +9,5 @@ Blockly.Msg.ROBOFLY_UNLOCK_SHOW = "无人机解锁";
 Blockly.Msg.ROBOFLY_LOCK_SHOW = "无人机上锁";
 Blockly.Msg.ROBOFLY_TAKE_OFF = "无人机起飞";
 Blockly.Msg.ROBOFLY_LANDING = "无人机降落";
+Blockly.Msg.ROBOFLY_STRAIGHT = "无人机前进";
+Blockly.Msg.ROBOFLY_BACK = "无人机后退";
