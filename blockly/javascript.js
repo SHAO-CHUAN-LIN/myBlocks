@@ -48,7 +48,7 @@ Blockly.JavaScript['robofly_unlock_command'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['drone_up_and_down'] = function(block) {
+Blockly.JavaScript['robofly_up_and_down'] = function(block) {
   var value_status = block.getFieldValue('status_');
   var value_time = Blockly.JavaScript.valueToCode(block, 'delay_time', Blockly.JavaScript.ORDER_ATOMIC);
   if(value_status == "take_off")
@@ -74,13 +74,13 @@ Blockly.JavaScript['drone_turn_right'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['drone_go_straight'] = function(block) {
+Blockly.JavaScript['robofly_go_straight'] = function(block) {
   // TODO: Assemble Arduino into code variable.
   var code = '...;\n';
   return code;
 };
 
-Blockly.JavaScript['drone_go_back'] = function(block) {
+Blockly.JavaScript['robofly_go_back'] = function(block) {
   // TODO: Assemble Arduino into code variable.
   var code = '...;\n';
   return code;
