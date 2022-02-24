@@ -98,7 +98,7 @@ Blockly.Blocks['robofly_up_and_down'] = {
           .appendField(new Blockly.FieldDropdown([
 	      [Blockly.Msg.ROBOFLY_TAKE_OFF,"take_off"],
 	      [Blockly.Msg.ROBOFLY_LANDING,"landing"]
-      ]), "status_");
+      ]), "throttle_status");
       this.appendValueInput("delay_time")
         .setCheck("Number")
         .appendField("持續");
