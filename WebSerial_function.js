@@ -1,6 +1,6 @@
 document.write('<input type="button" id="button_webserial_open" style="display:none;z-index:999" value="選擇序列埠">');
 document.write('<input type="button" id="button_webserial_close" style="display:none;z-index:999" value="關閉序列埠">');
-document.write('<input type="textarea" id="serial_text" style="display:none;position:absolute;z-index:auto"; rows="100"; cols="33" value="等待連線...">');
+document.write('<input type="textarea" id="serial_textarea" style="display:none;position:absolute;z-index:auto"; rows="100"; cols="33" value="等待連線...">');
 
 let serial_buttonRequest = document.getElementById('button_webserial_open');
 let serial_buttonClose = document.getElementById('button_webserial_close');
@@ -38,7 +38,7 @@ async function startSerial() {
 // 		    console.log("連線成功");
 		    document.getElementById('button_webserial_open').style.display = "none";
 		    document.getElementById('demo-area-01-show').innerHTML = "連線成功！";
-		    document.getElementById('serial_text').value = "open";
+		    document.getElementById('serial_textarea').value = "open";
 		    global_v = "1";
 	    }
     }
@@ -58,7 +58,7 @@ async function closeSerial(){
 // 		console.log("斷開連線");
 		document.getElementById('button_webserial_close').style.display = "none";
 		document.getElementById('demo-area-01-show').innerHTML = "等待連線...";
-		document.getElementById('serial_text').value = "等待連線...";
+		document.getElementById('serial_textarea').value = "等待連線...";
 
 	}
 	catch(error){
@@ -68,11 +68,12 @@ async function closeSerial(){
 
 
 async function webserial_status(){
-// 	var serial_text = (document.getElementById('serial_text').value).toString();
-// 	var serial_text = document.getElementById('serial_text').value;
-// 	var serial_text = serial_text.toString();
-// 	console.log(typeof serial_text);
-// 	console.log(serial_text);
+// 	var serial_textarea = (document.getElementById('serial_textarea').value).toString();
+// 	var serial_textarea = document.getElementById('serial_textarea').value;
+// 	var serial_textarea = serial_textarea.toString();
+// 	console.log(typeof serial_textarea);
+// 	console.log(serial_textarea);
+	return (serial_textarea.innerText=="open")?true:false;
 	return global_v;
 }
 
