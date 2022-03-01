@@ -5,7 +5,6 @@ document.write('<input type="textarea" id="serial_textarea" style="display:none;
 let serial_buttonRequest = document.getElementById('button_webserial_open');
 let serial_buttonClose = document.getElementById('button_webserial_close');
 
-var global_v = "0";
 let port = null;
 let port_info = null;
 let info = null;
@@ -74,7 +73,6 @@ async function webserial_status(){
 // 	console.log(typeof serial_textarea);
 // 	console.log(serial_textarea);
 	return (serial_textarea.innerText=="open")?true:false;
-	return global_v;
 }
 
 // serial_send_data.addEventListener('click', async () => {send_data();});
