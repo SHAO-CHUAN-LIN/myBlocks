@@ -31,7 +31,7 @@ Blockly.JavaScript['webserial_status'] = function(block) {
 //   var code = test + obj +'console.log(obj.name)';
 //   var code = 'console.log(JSON.stringify('+ test +'))';
   var code = 'webserial_port()';
-  return code;
+  return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['robofly_unlock_command'] = function(block) {
