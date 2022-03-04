@@ -12,6 +12,7 @@ let info = null;
 
 navigator.serial.addEventListener("connect", () => {
 	serial_message("Device connect");
+	console.log("Device connect");
 });
 
 navigator.serial.addEventListener("disconnect", () => {
@@ -38,7 +39,6 @@ async function startSerial() {
 		    document.getElementById('button_webserial_open').style.display = "none";
 		    document.getElementById('demo-area-01-show').innerHTML = "連線成功！";
 		    document.getElementById('serial_textarea').value = "open";
-		    global_v = "1";
 	    }
     }
     catch(error){
@@ -72,7 +72,7 @@ async function webserial_status(){
 // 	var serial_textarea = serial_textarea.toString();
 // 	console.log(typeof serial_textarea);
 // 	console.log(serial_textarea);
-	return (serial_textarea.innerText=="open")?true:false;
+	return (serial_textarea.innerText == "open")?true:false;
 }
 
 // serial_send_data.addEventListener('click', async () => {send_data();});
