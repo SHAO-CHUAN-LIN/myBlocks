@@ -72,7 +72,11 @@ async function webserial_status(){
 // 	var serial_textarea = serial_textarea.toString();
 // 	console.log(typeof serial_textarea);
 // 	console.log(serial_textarea);
-	return (serial_textarea.innerText == "open")?true:false;
+	if(serial_textarea.innerText == "open")
+		return "true";
+	else
+		return "false";
+// 	return (serial_textarea.innerText == "open")?true:false;
 }
 
 // serial_send_data.addEventListener('click', async () => {send_data();});
