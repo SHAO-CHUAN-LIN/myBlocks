@@ -73,9 +73,9 @@ async function webserial_status(){
 // 	console.log(typeof serial_textarea);
 // 	console.log(serial_textarea);
 	if(serial_textarea.innerText == "open")
-		return "true";
+		return true;
 	else
-		return "false";
+		return false;
 // 	return (serial_textarea.innerText == "open")?true:false;
 }
 
