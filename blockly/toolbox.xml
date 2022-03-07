@@ -7,14 +7,14 @@
     <block type="robofly_unlock_command">
         <value name="delay_time">
             <block type="math_number">
-                <field name="NUM">0</field>
+                <field name="NUM">1</field>
             </block>
         </value>
     </block>
     <block type="robofly_up_and_down">
         <value name="delay_time">
             <block type="math_number">
-                <field name="NUM">0</field>
+                <field name="NUM">1</field>
             </block>
         </value>
     </block>
@@ -23,7 +23,7 @@
     <block type="robofly_go_straight">
         <value name="delay_time">
             <block type="math_number">
-                <field name="NUM">0</field>
+                <field name="NUM">1</field>
             </block>
         </value>
     </block>
