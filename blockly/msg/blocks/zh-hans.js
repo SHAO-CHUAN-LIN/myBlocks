@@ -12,3 +12,7 @@ Blockly.Msg.ROBOFLY_TAKE_OFF = "无人机起飞";
 Blockly.Msg.ROBOFLY_LANDING = "无人机降落";
 Blockly.Msg.ROBOFLY_STRAIGHT = "无人机前进";
 Blockly.Msg.ROBOFLY_BACK = "无人机后退";
+Blockly.Msg.ROBOFLY_RIGHT_MOVE = "无人机右移";
+Blockly.Msg.ROBOFLY_LEFT_MOVE = "无人机左移";
+Blockly.Msg.ROBOFLY_RIGHT_DEFLECTION = "无人机右旋";
+Blockly.Msg.ROBOFLY_LEFT_DEFLECTION = "无人机左旋";
