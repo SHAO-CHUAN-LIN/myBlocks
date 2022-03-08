@@ -112,30 +112,6 @@ Blockly.Blocks['robofly_up_and_down'] = {
     }
 };
 
-Blockly.Blocks['drone_turn_left'] = {
-   init: function() {
-    this.appendDummyInput()
-        .appendField("無人機左旋");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(65);
- this.setTooltip("");
- this.setHelpUrl("");
-  }
-};
-
-Blockly.Blocks['drone_turn_right'] = {
-   init: function() {
-    this.appendDummyInput()
-        .appendField("無人機右旋");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(65);
- this.setTooltip("");
- this.setHelpUrl("");
-  }
-};
-
 Blockly.Blocks['robofly_go_straight'] = {
   init: function() {
     this.appendDummyInput()
@@ -154,6 +130,48 @@ Blockly.Blocks['robofly_go_straight'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null); 
     this.setColour(330);
+  }
+};
+
+Blockly.Blocks['robofly_move'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(Blockly.Msg.ROBOFLY_SHOW);	  
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldDropdown([
+		[Blockly.Msg.ROBOFLY_RIGHT_MOVE,"right"],
+ 		[Blockly.Msg.ROBOFLY_LEFT_MOVE,"left"]
+  	]), "move_status");
+    this.appendValueInput("delay_time")
+        .setCheck("Number")
+        .appendField("持續");
+    this.appendDummyInput()
+          .appendField("秒")
+    this.setInputsInline(true);	 	  
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null); 
+    this.setColour(65);
+  }
+};
+
+Blockly.Blocks['robofly_deflection'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(Blockly.Msg.ROBOFLY_SHOW);	  
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldDropdown([
+		[Blockly.Msg.ROBOFLY_RIGHT_DEFLECTION,"right"],
+ 		[Blockly.Msg.ROBOFLY_LEFT_DEFLECTION,"left"]
+  	]), "deflection_status");
+    this.appendValueInput("delay_time")
+        .setCheck("Number")
+        .appendField("持續");
+    this.appendDummyInput()
+          .appendField("秒")
+    this.setInputsInline(true);	 	  
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null); 
+    this.setColour(65);
   }
 };
 
