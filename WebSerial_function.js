@@ -65,8 +65,8 @@ async function closeSerial(){
 	}
 }
 
-
-async function webserial_status(){
+//async function webserial_status(){
+function webserial_status(){
 // 	var serial_textarea = (document.getElementById('serial_textarea').value).toString();
 // 	var serial_textarea = document.getElementById('serial_textarea').value;
 // 	var serial_textarea = serial_textarea.toString();
