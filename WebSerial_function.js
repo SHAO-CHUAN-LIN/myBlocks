@@ -98,7 +98,8 @@ async function send_data(command) {
 
 function delay_time(time){
 	switch()
-		case
+		case 'test_1':
+		
 		
 }
 
