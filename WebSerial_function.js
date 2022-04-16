@@ -96,6 +96,12 @@ async function send_data(command) {
     }
 }
 
+function delay_time(time){
+	switch()
+		case
+		
+}
+
 // function robotfly_status() {
 // 	function robofly_unlock_command(input_lock_status) {
 // 		const lock_status = document.getElementById(input_lock_status);
