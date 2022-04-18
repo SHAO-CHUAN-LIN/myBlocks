@@ -45,7 +45,7 @@ Blockly.JavaScript['robofly_unlock_command'] = function(block) {
                   'while(time > 0)\n'+
                   '	{\n'+
                       '		send_data("0x24,0x4D,0x3C,0x10,0xC8,0xDC,0x05,0xDC,0x05,0xd0,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xD8");\n'+
-                      '		delay(1);\n'+
+                      '		await delay(1);\n'+
                       '		time = time - 1;\n'+
                   '	}\n';
     else if(value_lock_status == "lock")
