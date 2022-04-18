@@ -40,10 +40,10 @@ Blockly.JavaScript['robofly_unlock_command'] = function(block) {
     var value_time = Blockly.JavaScript.valueToCode(block, 'delay_time', Blockly.JavaScript.ORDER_ATOMIC);
     if(value_lock_status == "unlock")
       var code = 'send_data("0x24,0x4D,0x3C,0x10,0xC8,0xDC,0x05,0xDC,0x05,0xd0,0x07,0xe8,0x03,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xE4");\n'+
-               'await delay('+ value_time +');\n';
+               'await delay_time('+ value_time +');\n';
     else if(value_lock_status == "lock")
       var code = 'send_data("0x24,0x4D,0x3C,0x10,0xC8,0xDC,0x05,0xDC,0x05,0xe8,0x03,0xe8,0x03,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xD8");\n'+
-               'await delay('+ value_time +');\n';
+               'await delay_time('+ value_time +');\n';
 //   var code = "robotfly_status('"+ value_lock_status +"')";
 //   return [code, Blockly.JavaScript.ORDER_NONE];
   return code;
