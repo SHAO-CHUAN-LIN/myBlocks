@@ -82,6 +82,22 @@ Blockly.Blocks['webserial_status'] = {
   }  
 };
 
+Blockly.Blocks['robofly_height'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(Blockly.Msg.ROBOFLY_HEIGHT);	  
+    this.appendValueInput("delay_time")
+        .setCheck("Number")
+        .appendField("，等待");
+    this.appendDummyInput()
+          .appendField("秒")
+    this.setInputsInline(true);	 	  
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null); 
+    this.setColour(100);
+  }
+};
+
 Blockly.Blocks['robofly_unlock_command'] = {
   init: function() {
     this.appendDummyInput()
