@@ -7,6 +7,7 @@ Blockly.Msg.WEBSERIAL_CLOSE = "Web Serial 关闭序列埠";
 Blockly.Msg.WEBSERIAL_GETSTATE_SHOW = "取得连线状态";
 Blockly.Msg.ROBOFLY_SHOW = "ROBOFLY";
 Blockly.Msg.ROBOFLY_CONNECT = "无人机连线";
+Blockly.Msg.ROBOFLY_HEIGHT = "无人机定高";
 Blockly.Msg.ROBOFLY_UNLOCK_SHOW = "无人机解锁";
 Blockly.Msg.ROBOFLY_LOCK_SHOW = "无人机上锁";
 Blockly.Msg.ROBOFLY_TAKE_OFF = "无人机起飞";
