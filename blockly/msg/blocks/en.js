@@ -7,6 +7,7 @@ Blockly.Msg.WEBSERIAL_CLOSE = "Web Serial Port Close";
 Blockly.Msg.WEBSERIAL_GETSTATE_SHOW = "Get Connect status";
 Blockly.Msg.ROBOFLY_SHOW = "ROBOFLY";
 Blockly.Msg.ROBOFLY_CONNECT = "drone connect";
+Blockly.Msg.ROBOFLY_HEIGHT = "drone height";
 Blockly.Msg.ROBOFLY_UNLOCK_SHOW = "drone unlock";
 Blockly.Msg.ROBOFLY_LOCK_SHOW = "drone lock";
 Blockly.Msg.ROBOFLY_TAKE_OFF = "drone take off";
