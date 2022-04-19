@@ -41,6 +41,19 @@ Blockly.JavaScript['webserial_status'] = function(block) {
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
+Blockly.JavaScript['robofly_height'] = function(block) {
+  var value_status = block.getFieldValue('move_status');
+  var value_time = Blockly.JavaScript.valueToCode(block, 'delay_time', Blockly.JavaScript.ORDER_ATOMIC);
+  var code ='var time = '+ value_time +';\n'+
+                  'while(time >= 0)\n'+
+                  '	{\n'+
+                      '		send_data("0x24,0x4D,0x3C,0x10,0xC8,0xDC,0x05,0xDC,0x05,0xd0,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xD8");\n'+
+                      '		await delay(1);\n'+
+                      '		time = time - 1;\n'+
+                  '	}\n';
+  return code;
+};
+
 Blockly.JavaScript['robofly_unlock_command'] = function(block) {
     var value_lock_status = block.getFieldValue('lock_status');
     var value_time = Blockly.JavaScript.valueToCode(block, 'delay_time', Blockly.JavaScript.ORDER_ATOMIC);
