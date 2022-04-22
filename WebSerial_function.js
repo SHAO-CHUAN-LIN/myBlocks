@@ -108,6 +108,11 @@ function delay_time(time){
 	}
 }
 
+function auto_land(){
+	return
+
+}
+
 
 // function robotfly_status() {
 // 	function robofly_unlock_command(input_lock_status) {
