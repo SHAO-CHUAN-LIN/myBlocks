@@ -113,7 +113,7 @@ function auto_land(value_throttle){
 	var throttle_0 = value_throttle % 256;
 	    throttle_0 = "0x" + (throttle_0.toString(16).length==2?"":"0") + throttle_0.toString(16);
 	var throttle_1 = Math.floor(value_throttle / 256);
-	    throttle_1 = "0x"+(throttle1.toString(16).length==2?"":"0")+throttle1.toString(16);
+	    throttle_1 = "0x" + (throttle_1.toString(16).length==2?"":"0") + throttle_1.toString(16);
 	var crc = 0x10^0xC8^0xDC^0x05^0xDC^0x05^0xDC^0x05^throttle_0^throttle_1^0xDC^0x05^0xDC^0x05^0xDC^0x05^0xDC^0x05;
 	
 	crc = "0x"+(crc.toString(16).length==2?"":"0") + crc.toString(16);
