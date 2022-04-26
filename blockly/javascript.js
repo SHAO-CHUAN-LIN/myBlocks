@@ -86,7 +86,7 @@ Blockly.JavaScript['robofly_up_and_down'] = function(block) {
   var value_status = block.getFieldValue('throttle_status');
   var value_time = Blockly.JavaScript.valueToCode(block, 'delay_time', Blockly.JavaScript.ORDER_ATOMIC);
   if(value_status == "take_off")
-    var code = 'send_data("0x24,0x4D,0x3C,0x10,0xC8,0xDC,0x05,0xDC,0x05,0xDC,0x05,0x3A,0x07,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0x3C");\n'+ //1850
+    var code = 'send_data("0x24,0x4D,0x3C,0x10,0xC8,0xDC,0x05,0xDC,0x05,0xDC,0x05,0x08,0x07,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0x0E");\n'+ //1800
 //               'await delay('+ value_time +');\n';
                   'var time = '+ value_time +';\n'+
                   'while(time >= 0)\n'+
@@ -180,6 +180,19 @@ Blockly.JavaScript['robofly_deflection'] = function(block) {
 
 Blockly.JavaScript['drone_land'] = function(block) {
   // TODO: Assemble Arduino into code variable.
-  var code = '...;\n';
+  var code = 'send_data(auto_land(1800));\n'+
+              'await delay(1)\n'+
+              'send_data(auto_land(1750));\n'+
+              'await delay(1)\n'+              
+              'send_data(auto_land(1700));\n'+
+              'await delay(1)\n'+
+              'send_data(auto_land(1650));\n'+
+              'await delay(1)\n'+
+              'send_data(auto_land(1600));\n'+
+              'await delay(1)\n'+              
+              'send_data(auto_land(1550));\n'+
+              'await delay(1)\n'+
+              'send_data(auto_land(1500));\n'+
+              'await delay(1)\n';
   return code;
 };
