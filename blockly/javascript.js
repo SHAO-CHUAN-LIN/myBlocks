@@ -98,7 +98,7 @@ Blockly.JavaScript['robofly_up_and_down'] = function(block) {
                     '		await delay(1);\n'+
                     '		time = time - 1;\n'+
                 '	}\n';
-  else if(value_status == "landing")
+  else if(value_status == "shut_down")
     var code = '//RoboFly shut down command\n'+
                 'send_data("0x24,0x4D,0x3C,0x10,0xC8,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xE8,0x03,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xEA");\n'+ //1000
 //                 'await delay('+ value_time +');\n';
