@@ -204,22 +204,21 @@ Blockly.JavaScript['robofly_deflection'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['drone_land'] = function(block) {
-  // TODO: Assemble Arduino into code variable.
-  var code = '//RoboFly auto land command\n'+
-              'send_data(auto_land(1800));\n'+
+Blockly.JavaScript['robofly_landing'] = function(block) {
+  var code = '//RoboFly landing command\n'+
+              'send_data(landing(1800));\n'+
               'await delay(1)\n'+
-              'send_data(auto_land(1750));\n'+
+              'send_data(landing(1750));\n'+
               'await delay(1)\n'+              
-              'send_data(auto_land(1700));\n'+
+              'send_data(landing(1700));\n'+
               'await delay(1)\n'+
-              'send_data(auto_land(1650));\n'+
+              'send_data(landing(1650));\n'+
               'await delay(1)\n'+
-              'send_data(auto_land(1600));\n'+
+              'send_data(landing(1600));\n'+
               'await delay(1)\n'+              
-              'send_data(auto_land(1550));\n'+
+              'send_data(landing(1550));\n'+
               'await delay(1)\n'+
-              'send_data(auto_land(1500));\n'+
+              'send_data(landing(1500));\n'+
               'await delay(1)\n';
   return code;
 };
