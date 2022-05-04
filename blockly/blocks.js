@@ -209,7 +209,7 @@ Blockly.Blocks['robofly_landing'] = {
         .appendField("Blockly.Msg.ROBOFLY_LANDING");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour(0);
  this.setTooltip("");
  this.setHelpUrl("");
   }
