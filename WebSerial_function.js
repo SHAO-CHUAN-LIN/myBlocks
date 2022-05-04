@@ -108,7 +108,7 @@ function delay_time(time){
 	}
 }
 
-function auto_land(value_throttle){
+function landing(value_throttle){
 // 	var throttle_variable = Math.floor(value_throttle);
 	var throttle_0 = value_throttle % 256;
 	    throttle_0 = "0x" + (throttle_0.toString(16).length==2?"":"0") + throttle_0.toString(16);
