@@ -203,10 +203,10 @@ Blockly.Blocks['robofly_deflection'] = {
   }
 };
 
-Blockly.Blocks['drone_land'] = {
+Blockly.Blocks['robofly_landing'] = {
    init: function() {
     this.appendDummyInput()
-        .appendField("無人機降落");
+        .appendField("Blockly.Msg.ROBOFLY_RIGHT_LANDING");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
