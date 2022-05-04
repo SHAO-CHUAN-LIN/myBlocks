@@ -18,3 +18,4 @@ Blockly.Msg.ROBOFLY_RIGHT_MOVE = "無人機右移";
 Blockly.Msg.ROBOFLY_LEFT_MOVE = "無人機左移";
 Blockly.Msg.ROBOFLY_RIGHT_DEFLECTION = "無人機右旋";
 Blockly.Msg.ROBOFLY_LEFT_DEFLECTION = "無人機左旋";
+Blockly.Msg.ROBOFLY_LANDING = "無人機降落";
