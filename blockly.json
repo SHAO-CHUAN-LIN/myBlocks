@@ -1,6 +1,6 @@
 {
   "types": ["webserial_get_serialport","webserial_serialport","webserial_open","webserial_close","robofly_connect","webserial_status","robofly_height","robofly_unlock_command","robofly_up_and_down",
-            "robofly_go_straight","robofly_move","robofly_deflection","drone_land"
+            "robofly_go_straight","robofly_move","robofly_deflection","robofly_landing"
            ],
   "category": "Drone",
   "scripts": [
