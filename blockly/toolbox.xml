@@ -47,5 +47,5 @@
             </block>
         </value>
     </block>
-    <block type="drone_land"></block>
+    <block type="robofly_landing"></block>
 </category>
