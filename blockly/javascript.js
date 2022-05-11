@@ -206,10 +206,10 @@ Blockly.JavaScript['robofly_deflection'] = function(block) {
 
 Blockly.JavaScript['robofly_landing'] = function(block) {
   var code = '//RoboFly landing command\n'+
-              'send_data(landing(1800));\n'+
-              'await delay(1)\n'+
-              'send_data(landing(1750));\n'+
-              'await delay(1)\n'+              
+//               'send_data(landing(1800));\n'+
+//               'await delay(1)\n'+
+//               'send_data(landing(1750));\n'+
+//               'await delay(1)\n'+              
               'send_data(landing(1700));\n'+
               'await delay(1)\n'+
               'send_data(landing(1650));\n'+
