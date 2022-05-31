@@ -210,7 +210,5 @@ Blockly.Blocks['robofly_landing'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(0);
- this.setTooltip("");
- this.setHelpUrl("");
   }
 };
