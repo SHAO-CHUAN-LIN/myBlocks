@@ -18,4 +18,8 @@ Blockly.Msg.ROBOFLY_RIGHT_MOVE = "无人机右移";
 Blockly.Msg.ROBOFLY_LEFT_MOVE = "无人机左移";
 Blockly.Msg.ROBOFLY_RIGHT_DEFLECTION = "无人机右旋";
 Blockly.Msg.ROBOFLY_LEFT_DEFLECTION = "无人机左旋";
-Blockly.Msg.ROBOFLY_LANDING = "無人機降落";
+Blockly.Msg.ROBOFLY_LANDING = "無人机降落";
+
+Blockly.Msg.ROBOFLY_WAIT = "等待";
+Blockly.Msg.ROBOFLY_KEEP = "持续";
+Blockly.Msg.ROBOFLY_SECOND = "秒";
