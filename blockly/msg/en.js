@@ -1,1 +1,1 @@
-MSG.Drone = "無人機積木"
+MSG.Drone = "Drone Blocks"
