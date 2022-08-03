@@ -19,3 +19,6 @@ Blockly.Msg.ROBOFLY_LEFT_MOVE = "Robofly Move Left";
 Blockly.Msg.ROBOFLY_RIGHT_DEFLECTION = "Robofly Deflection Right";
 Blockly.Msg.ROBOFLY_LEFT_DEFLECTION = "Robofly Deflection Left";
 Blockly.Msg.ROBOFLY_LANDING = "Robofly Landing";
+
+Blockly.Msg.ROBOFLY_WAIT = "wait";
+Blockly.Msg.ROBOFLY_SECOND = "keep";
