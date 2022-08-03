@@ -88,9 +88,9 @@ Blockly.Blocks['robofly_height'] = {
         .appendField(Blockly.Msg.ROBOFLY_HEIGHT);	  
     this.appendValueInput("delay_time")
         .setCheck("Number")
-        .appendField("，等待");
+        .appendField("，"+ Blockly.Msg.ROBOFLY_WAIT);
     this.appendDummyInput()
-          .appendField("秒")
+          .appendField(Blockly.Msg.ROBOFLY_SECOND)
     this.setInputsInline(true);	 	  
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null); 
@@ -109,7 +109,7 @@ Blockly.Blocks['robofly_unlock_command'] = {
   	]), "lock_status");
     this.appendValueInput("delay_time")
         .setCheck("Number")
-        .appendField("，" + Blockly.Msg.ROBOFLY_WAIT);
+        .appendField("，" + Blockly.Msg.ROBOFLY_KEEP);
     this.appendDummyInput()
           .appendField(Blockly.Msg.ROBOFLY_SECOND)
     this.setInputsInline(true);	 	  
@@ -129,9 +129,9 @@ Blockly.Blocks['robofly_up_and_down'] = {
       ]), "throttle_status");
       this.appendValueInput("delay_time")
         .setCheck("Number")
-        .appendField("持續");
+        .appendField(Blockly.Msg.ROBOFLY_KEEP);
       this.appendDummyInput()
-          .appendField("秒")
+          .appendField(Blockly.Msg.ROBOFLY_SECOND)
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
       this.setColour(20);
@@ -151,9 +151,9 @@ Blockly.Blocks['robofly_go_straight'] = {
   	]), "direction_status");
     this.appendValueInput("delay_time")
         .setCheck("Number")
-        .appendField("持續");
+        .appendField(Blockly.Msg.ROBOFLY_KEEP);
     this.appendDummyInput()
-          .appendField("秒")
+          .appendField(Blockly.Msg.ROBOFLY_SECOND)
     this.setInputsInline(true);	 	  
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null); 
@@ -172,9 +172,9 @@ Blockly.Blocks['robofly_move'] = {
   	]), "move_status");
     this.appendValueInput("delay_time")
         .setCheck("Number")
-        .appendField("持續");
+        .appendField(Blockly.Msg.ROBOFLY_KEEP);
     this.appendDummyInput()
-          .appendField("秒")
+          .appendField(Blockly.Msg.ROBOFLY_SECOND)
     this.setInputsInline(true);	 	  
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null); 
@@ -193,9 +193,9 @@ Blockly.Blocks['robofly_deflection'] = {
   	]), "deflection_status");
     this.appendValueInput("delay_time")
         .setCheck("Number")
-        .appendField("持續");
+        .appendField(Blockly.Msg.ROBOFLY_KEEP);
     this.appendDummyInput()
-          .appendField("秒")
+          .appendField(Blockly.Msg.ROBOFLY_SECOND)
     this.setInputsInline(true);	 	  
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null); 
