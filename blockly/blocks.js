@@ -88,7 +88,7 @@ Blockly.Blocks['robofly_height'] = {
         .appendField(Blockly.Msg.ROBOFLY_HEIGHT);	  
     this.appendValueInput("delay_time")
         .setCheck("Number")
-        .appendField("，"+ Blockly.Msg.ROBOFLY_WAIT);
+        .appendField(""+ Blockly.Msg.ROBOFLY_KEEP);
     this.appendDummyInput()
           .appendField(Blockly.Msg.ROBOFLY_SECOND)
     this.setInputsInline(true);	 	  
