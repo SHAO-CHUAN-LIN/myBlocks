@@ -109,7 +109,7 @@ Blockly.Blocks['robofly_unlock_command'] = {
   	]), "lock_status");
     this.appendValueInput("delay_time")
         .setCheck("Number")
-        .appendField("，" + Blockly.Msg.ROBOFLY_KEEP);
+        .appendField("，" + Blockly.Msg.ROBOFLY_WAIT);
     this.appendDummyInput()
           .appendField(Blockly.Msg.ROBOFLY_SECOND)
     this.setInputsInline(true);	 	  
