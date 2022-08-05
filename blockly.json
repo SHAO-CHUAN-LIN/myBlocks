@@ -1,5 +1,5 @@
 {
-  "types": ["webserial_open","webserial_close","robofly_height","robofly_unlock_command","robofly_up_and_down",
+  "types": ["webserial_open","webserial_close","robofly_connect","robofly_height","robofly_unlock_command","robofly_up_and_down",
             "robofly_go_straight","robofly_move","robofly_deflection","robofly_landing"
            ],
   "category": "Drone",
