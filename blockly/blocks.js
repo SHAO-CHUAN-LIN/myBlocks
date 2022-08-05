@@ -1,41 +1,3 @@
-Blockly.Blocks['webserial_get_serialport'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.WEBSERIAL_SELECT_COMPORT);	  
-    this.appendDummyInput()
-        .appendField(new Blockly.FieldDropdown([
-		[Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW,"button_webserial_open"],
-	    	[Blockly.Msg.WEBSERIAL_BUTTON_CLOSE_SHOW,"button_webserial_close"]
-  	]), "status_");
-    this.appendDummyInput()
-	.appendField(Blockly.Msg.WEBSERIAL_SHOW_SHOW)	  
-        .appendField(new Blockly.FieldDropdown([
-		["Y","block"],
-		["N","none"]
-  	]), "select_"); 
-    this.setInputsInline(true);	 	  
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(30);
-  }
-};
-
-Blockly.Blocks['webserial_serialport'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.WEBSERIAL_SELECT_COMPORT);	  
-    this.appendDummyInput()
-        .appendField(new Blockly.FieldDropdown([
-		[Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW,"open"],
-	    	[Blockly.Msg.WEBSERIAL_BUTTON_CLOSE_SHOW,"close"]
-  	]), "status");
-    this.setInputsInline(true);	 	  
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(195);
-  }
-};
-
 Blockly.Blocks['webserial_open'] = {
   init: function() {
     this.appendDummyInput()
@@ -58,28 +20,6 @@ Blockly.Blocks['webserial_close'] = {
  this.setTooltip("");
  this.setHelpUrl("");
   }
-};
-
-Blockly.Blocks['robofly_connect'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.ROBOFLY_CONNECT);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(30);
- this.setTooltip("");
- this.setHelpUrl("");
-  }
-};
-
-Blockly.Blocks['webserial_status'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField(Blockly.Msg.WEBSERIAL_GETSTATE_SHOW);
-    this.setInputsInline(true);	 	  
-    this.setOutput(true, null);  
-    this.setColour(300);
-  }  
 };
 
 Blockly.Blocks['robofly_height'] = {
