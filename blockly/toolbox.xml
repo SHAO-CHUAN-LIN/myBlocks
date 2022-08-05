@@ -1,10 +1,6 @@
 <category id="Drone" name="無人機積木" colour="345">
-    <block type="webserial_get_serialport"></block>
-    <block type="webserial_serialport"></block>
     <block type="webserial_open"></block>
     <block type="webserial_close"></block>
-    <block type="robofly_connect"></block>
-    <block type="webserial_status"></block>
     <block type="robofly_height">
         <value name="delay_time">
             <block type="math_number">
