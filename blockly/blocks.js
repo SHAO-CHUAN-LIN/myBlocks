@@ -154,3 +154,15 @@ Blockly.Blocks['robofly_landing'] = {
  this.setHelpUrl("");
   }
 };
+
+Blockly.Blocks['robofly_connect'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(Blockly.Msg.ROBOFLY_CONNECT);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(30);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
