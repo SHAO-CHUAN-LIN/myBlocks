@@ -55,6 +55,12 @@ Blockly.JavaScript['robofly_unlock_command'] = function(block) {
   return code;
 };
 
+Blockly.JavaScript['robofly_connect'] = function(block) {
+    var code = 'send_data("0x24,0x4D,0x3C,0x10,0xC8,0xDC,0x05,0xDC,0x05,0xd0,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xD8");\n'+
+                'await delay(1);\n';
+  return code;
+};
+
 Blockly.JavaScript['robofly_up_and_down'] = function(block) {
   var value_status = block.getFieldValue('throttle_status');
   var value_time = Blockly.JavaScript.valueToCode(block, 'delay_time', Blockly.JavaScript.ORDER_ATOMIC);
