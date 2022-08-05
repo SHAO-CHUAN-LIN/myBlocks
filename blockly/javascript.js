@@ -1,16 +1,3 @@
-Blockly.JavaScript['webserial_get_serialport'] = function(block) {
-  var value_status = block.getFieldValue('status_');   
-  var value_select = block.getFieldValue('select_');
-  var code = 'webserial_get_port("'+value_status+'","'+value_select+'");\n';
-  return code;
-};
-
-Blockly.JavaScript['webserial_serialport'] = function(block) {
-    var value_status = block.getFieldValue('status');   
-    var code = 'webserial_port("'+value_status+'");\n';
-  return code;
-};
-
 Blockly.JavaScript['webserial_open'] = function(block) {
     var hidden_dropdown = document.getElementById('demo-select').style.display = "none";  
     var code = 'webserial_port("open");\n'+
@@ -23,22 +10,6 @@ Blockly.JavaScript['webserial_open'] = function(block) {
 Blockly.JavaScript['webserial_close'] = function(block) {
     var code = 'webserial_port("close");\n';
   return code;
-};
-
-Blockly.JavaScript['robofly_connect'] = function(block) {
-    var code = 'send_data("0x24,0x4D,0x3C,0x10,0xC8,0xDC,0x05,0xDC,0x05,0xd0,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xDC,0x05,0xD8");\n'+
-                'await delay(1);\n';
-  return code;
-};
-
-Blockly.JavaScript['webserial_status'] = function(block) {
-  //  var code = 'JSON.stringify(webserial_status())';
-//   var test = 'var test = {"name":"John", "birth":"1986-12-14", "city":"New York"};\n';
-//   var obj = 'var obj = JSON.parse(test);\n';
-//   var code = test + obj +'console.log(obj.name)';
-//   var code = 'console.log(JSON.stringify('+ test +'))';
-  var code = 'webserial_status()';
-  return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['robofly_height'] = function(block) {
