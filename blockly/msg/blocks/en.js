@@ -1,10 +1,6 @@
-Blockly.Msg.WEBSERIAL_SELECT_COMPORT = "Web Serial Status";
-Blockly.Msg.WEBSERIAL_SHOW_SHOW = "Show";
-Blockly.Msg.WEBSERIAL_BUTTON_CONNECT_SHOW = "Open";
-Blockly.Msg.WEBSERIAL_BUTTON_CLOSE_SHOW = "Close";
+
 Blockly.Msg.WEBSERIAL_OPEN = "Web Serial Port Open";
 Blockly.Msg.WEBSERIAL_CLOSE = "Web Serial Port Close";
-Blockly.Msg.WEBSERIAL_GETSTATE_SHOW = "Get RoboFly Connect Status";
 Blockly.Msg.ROBOFLY_SHOW = "DRONE";
 Blockly.Msg.ROBOFLY_CONNECT = "DRONE RoboFly Start to Connect";
 Blockly.Msg.ROBOFLY_HEIGHT = "DRONE RoboFly Hover";
