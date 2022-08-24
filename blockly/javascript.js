@@ -187,15 +187,15 @@ Blockly.JavaScript['robofly_landing'] = function(block) {
 //               'await delay(1)\n'+
 //               'send_data(landing(1750));\n'+
 //               'await delay(1)\n'+              
-              'send_data(landing(1700));\n'+
-              'await delay(1)\n'+
-              'send_data(landing(1650));\n'+
-              'await delay(1)\n'+
               'send_data(landing(1600));\n'+
-              'await delay(1)\n'+              
+              'await delay(1)\n'+
               'send_data(landing(1550));\n'+
               'await delay(1)\n'+
               'send_data(landing(1500));\n'+
+              'await delay(1)\n'+              
+              'send_data(landing(1450));\n'+
+              'await delay(1)\n'+
+              'send_data(landing(1400));\n'+
               'await delay(1)\n';
   return code;
 };
